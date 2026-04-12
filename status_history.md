@@ -16,13 +16,26 @@ Verlaufstracker für Umklassifizierungen und wichtige Statusereignisse, ohne die
 |-------|-------------|----------|--------|
 | 2025-09-14 | `gefaehrdet` | Ratsbürgerentscheid gegen die dauerhafte Schließung des Stadtbads. | https://www.drolshagen.de/Politik/B%C3%BCrgermeister-Rat/Ratsb%C3%BCrgerentscheid/ |
 | 2025-09-17 | `gefaehrdet` | Ergebnis öffentlich eingeordnet: 65,33 % gegen die Schließung. Bad bleibt offen, Finanzierung aber ungelöst. | https://lokaldirekt.de/news/klares-votum-buerger-wollen-ihr-stadtbad-erhalten |
-| 2026-01-20 | `gefaehrdet` | Stadt bewirbt sich um 4,3 Mio. Euro Förderung; Sanierungskosten werden mit 9,4 Mio. Euro beziffert. Fall bleibt im Monitor. | https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad |
+| 2026-01-01 | `geschlossen` | Laut Stadt Drolshagen bleibt das Stadtbad ab dem 01.01.2026 zunächst geschlossen, weil Arbeiten für einen sicheren Betrieb durchgeführt werden müssen. Der Bürgerentscheid gegen eine dauerhafte Schließung hebt diese aktuelle Schließung nicht auf. | https://www.drolshagen.de/B%C3%BCrgerservice/Service-Dialog/Dienstleistungen-A-Z/Stadtbad-Drolshagen.php?FID=2580.51.1&ModID=10 |
+| 2026-01-20 | `geschlossen` | Die Stadt bewirbt sich parallel um 4,3 Mio. Euro Förderung; Sanierungskosten werden mit 9,4 Mio. Euro beziffert. Die politische Rettungsperspektive ändert nichts daran, dass das Bad im Live-Status geschlossen bleibt. | https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad |
 
 ### Stadtbad Neuss
 
 | Datum | Live-Status | Ereignis | Quelle |
 |-------|-------------|----------|--------|
 | 2025-12-21 | `gefaehrdet` | Für die Modernisierung des Stadtbads wird eine Bundesförderung über bis zu 8 Mio. Euro angestrebt. Anfang 2026 soll entschieden werden, ob das Bad modernisiert oder geschlossen wird. Bis dahin bleibt der Fall im Monitor. | https://spd-neuss.de/2025/12/21/spd-neuss-setzt-sich-fuer-stadtbad-erhalt-ein/ |
+
+### Konradbad
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2025-07-09 | `geschlossen` | In der offiziellen Neusser Kommunikation wird das Konradbad bereits als seit Jahren geschlossen geführt. Der Fall wird daher von `gefaehrdet` auf `geschlossen` umgestellt. | https://www.neuss.de/presse/meldungen/2025/07/09/neusser-baederlandschaft-im-fokus |
+
+### Lehrschwimmbecken Ohmenhausen
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2026-01-20 | `geschlossen` | Das Becken ist seit Pfingsten 2025 geschlossen. Ein irreparabler Kompressor verhindert die Wiederinbetriebnahme; wegen der prekären Haushaltslage ist auch die nötige Grundsanierung offen. | https://www.gea.de/reutlingen_artikel,-bleibt-das-lehrschwimmbecken-in-ohmenhausen-f%C3%BCr-immer-zu-_arid,7114126.html
 
 ### Freibad Bad Iburg
 
@@ -57,6 +70,40 @@ Verlaufstracker für Umklassifizierungen und wichtige Statusereignisse, ohne die
 |-------|-------------|----------|--------|
 | 2025-05-15 | `gefaehrdet` | Erstmeldung: Bremen will Wasserflächen einsparen; dadurch könnte das Blumenthaler Freibad zur Disposition gestellt werden. | https://www.weser-kurier.de/bremen/stadtteil-blumenthal/blumenthal-warum-das-freibad-zur-disposition-stehen-koennte-doc80n9msk8fbbp66q146g |
 | 2026-04-11 | `gefaehrdet` | Update: Statt eines unmittelbaren Aus wird nun über Investitionen in das Freibad auch mithilfe von Bürgern gesprochen. Das entschärft die Lage, reicht wegen offener Bedingungen und Finanzierung aber noch nicht für eine Entwarnung. | https://www.weser-kurier.de/bremen/stadtteil-blumenthal/freibad-blumenthal-warum-vorgaben-fuers-spendenprojekt-schlecht-waeren-doc85c9tf0d65s1gi9a946w |
+
+### Freibad Erleborn
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2026-03-25 | `geschlossen` | Die Stadt Homberg meldet während der laufenden Sanierung sichtbare Baufortschritte an Becken, Badewassertechnik und neuem Multifunktionsgebäude. | https://www.homberg-efze.de/rathaus-politik/aktuelles/nachrichten/2026/maerz/freibad/ |
+| 2026-04-12 | `aus_liste_entfernt` | Der Fall wird aus der Live-Liste entfernt: Das Freibad wird derzeit saniert, ist aber nicht mehr als eigenständiger aktueller Schließungsfall des Monitors zu führen. | https://www.homberg-efze.de/rathaus-politik/aktuelles/nachrichten/2026/maerz/freibad/ |
+
+### Freibad Volkach
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2024-06-28 | `geschlossen` | Das Freibad wurde als seit 2020 geschlossen dokumentiert. | https://www.radiogong.com/aktuelles/news/lokales/volkach-tage-fuer-das-freibad-sind-gezaehlt |
+| 2026-04-12 | `aus_liste_entfernt` | Die Stadt Volkach saniert das Freibad grundlegend; die Eröffnung ist zur Freibadsaison 2026 geplant. Der Fall wird deshalb nicht weiter als aktueller Live-Schließungsfall geführt. | https://www.stadt-volkach.de/buergerservice/sanierung-freibad-volkach |
+
+### Freibad Guben
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2023-09-04 | `geschlossen` | Das Freibad wurde nach technischen Problemen zunächst geschlossen. | https://www.niederlausitz-aktuell.de/spree-neisse/guben/241447/gubener-freibad-ab-sofort-geschlossen.html |
+| 2026-04-12 | `aus_liste_entfernt` | Die Stadt Guben dokumentiert inzwischen den Ersatzneubau an neuem Standort. Der Altfall wird deshalb nicht weiter als aktueller Live-Schließungsfall geführt. | https://www.guben.de/de/wirtschaft-stadtentwicklung/stadtentwicklung/item/1068-gubener-freibad-an-neuem-standort |
+
+### Freibad Kochsagrund
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2024-09-04 | `geschlossen` | Das Mutter-Kind-Becken im Freibad Kochsagrund wurde als gesperrt dokumentiert. | https://www.niederlausitz-aktuell.de/niederlausitz-aktuell/orte/spree-neisse/spremberg/278822/mutter-kind-becken-im-freibad-kochsagrund-gesperrt.html |
+| 2026-04-12 | `aus_liste_entfernt` | Der Fall wird aus der Live-Liste entfernt: Ein neuerer Pressebericht behandelt das Freibad wieder als regulär betriebenen Standort und thematisiert 2026 Eintrittspreise. Die frühere Teilsperrung wird damit nicht weiter als aktueller Live-Fall geführt. | https://archive.ph/ZIbnN |
+
+### Waldbad Cunnersdorf
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2025-07-17 | `geschlossen` | Laut Pressebericht ist das Waldbad seit der Saison 2025 geschlossen. Als Gründe werden veraltete Technik und fehlendes Personal genannt; ein belastbarer Neustart für 2026 ist nicht dokumentiert. | https://archive.ph/AEduZ |
 
 ### Freibad Türnich
 

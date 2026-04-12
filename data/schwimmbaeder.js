@@ -41,12 +41,13 @@ window.SCHWIMMBAEDER_DATEN = [
     "adresse": "Kölner Straße 214, 41468 Neuss",
     "bundesland": "Nordrhein-Westfalen",
     "region": "Rhein-Kreis Neuss",
-    "status": "gefaehrdet",
-    "begruendung": "Sanierungsfall. Wiedereröffnung laut Bürgermeister unwahrscheinlich.",
+    "status": "geschlossen",
+    "begruendung": "In der offiziellen Neusser Kommunikation wird das Konradbad bereits als seit Jahren geschlossen geführt. Eine Wiedereröffnung ist nicht in Sicht; der Fall zählt daher nicht nur als gefährdet, sondern als geschlossen.",
     "zeitraum": "2025",
     "quelle": {
-      "titel": "RP Online: Schlechte Chancen für das Neusser Konradbad",
-      "url": "https://rp-online.de/nrw/staedte/neuss/neuss-wiedereroeffnung-vom-konradbad-unwahrscheinlich_aid-124834019"
+      "titel": "Stadt Neuss: Neusser Bäderlandschaft im Fokus",
+      "url": "https://www.neuss.de/presse/meldungen/2025/07/09/neusser-baederlandschaft-im-fokus",
+      "datum": "2025-07-09"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.185613&mlon=6.715742#map=17/51.185613/6.715742",
     "lat": 51.185613,
@@ -58,13 +59,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "adresse": "Schillerstraße 2, 57489 Drolshagen",
     "bundesland": "Nordrhein-Westfalen",
     "region": "Kreis Olpe",
-    "status": "gefaehrdet",
-    "begruendung": "Die Schließung wurde im Ratsbürgerentscheid vom 14.09.2025 abgelehnt. Trotzdem bleibt das Bad finanziell unter Druck: Die Stadt bewirbt sich 2026 um 4,3 Mio. Euro Förderung, die Gesamtsanierung wird inzwischen auf 9,4 Mio. Euro geschätzt. Bis die Finanzierung gesichert ist, bleibt der Fall im Monitor als gefährdet.",
+    "status": "geschlossen",
+    "begruendung": "Das Stadtbad bleibt laut Stadt Drolshagen seit dem 01.01.2026 zunächst geschlossen, weil Arbeiten für einen sicheren Betrieb durchgeführt werden müssen. Der Bürgerentscheid gegen eine dauerhafte Schließung hebt diese aktuelle Betriebspause nicht auf; auch die Finanzierung der weiteren Zukunft bleibt offen.",
     "zeitraum": "2026",
     "quelle": {
-      "titel": "LokalDirekt: Drolshagen bewirbt sich um 4,3 Millionen Euro Förderung für das Stadtbad",
-      "url": "https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad",
-      "datum": "2026-01-20"
+      "titel": "Stadt Drolshagen: Stadtbad Drolshagen",
+      "url": "https://www.drolshagen.de/B%C3%BCrgerservice/Service-Dialog/Dienstleistungen-A-Z/Stadtbad-Drolshagen.php?FID=2580.51.1&ModID=10"
     },
     "lat": 51.025681,
     "lon": 7.767077,
@@ -77,11 +77,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Baden-Württemberg",
     "region": "Reutlingen",
     "status": "geschlossen",
-    "begruendung": "Schwerwiegender technischer Defekt. Reparatur (~100.000 €) nicht finanzierbar. Stadt verweist auf fehlende Mittel/Haushaltssituation. Grundsanierung in Millionenhöhe nicht stemmbar.",
-    "zeitraum": "2025",
+    "begruendung": "Seit Pfingsten 2025 geschlossen. Ein irreparabler Kompressor verhindert die Wiederinbetriebnahme; eine neue Lüftungsanlage und die nötige Grundsanierung sind wegen der prekären Haushaltslage offen. Damit ist das Becken aktuell eher als geschlossen als nur gefährdet einzuordnen.",
+    "zeitraum": "2026",
     "quelle": {
-      "titel": "GEA: Bäder in Not – So ist die Lage in Reutlingen",
-      "url": "https://www.gea.de/reutlingen_artikel%2C-b%C3%A4der-in-not-so-ist-die-lage-in-reutlingen-_arid%2C7051435.html"
+      "titel": "GEA: Bleibt das Lehrschwimmbecken in Ohmenhausen für immer zu?",
+      "url": "https://www.gea.de/reutlingen_artikel,-bleibt-das-lehrschwimmbecken-in-ohmenhausen-f%C3%BCr-immer-zu-_arid,7114126.html",
+      "datum": "2026-01-20"
     },
     "lat": 48.469951,
     "lon": 9.133693,
@@ -158,24 +159,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "lon": 8.213434
   },
   {
-    "id": 15,
-    "name": "Freibad Volkach",
-    "adresse": "Fahrer Straße 1, 97332 Volkach",
-    "bundesland": "Bayern",
-    "region": "Landkreis Kitzingen",
-    "status": "geschlossen",
-    "begruendung": "Seit 2020 wegen Baufälligkeit geschlossen.",
-    "zeitraum": "2020",
-    "quelle": {
-      "titel": "Radio Gong Würzburg: Volkach – Tage für das Freibad sind gezählt",
-      "url": "https://www.radiogong.com/aktuelles/news/lokales/volkach-tage-fuer-das-freibad-sind-gezaehlt",
-      "datum": "2024-06-28"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=49.868145&mlon=10.222414#map=17/49.868145/10.222414",
-    "lat": 49.868145,
-    "lon": 10.222414
-  },
-  {
     "id": 16,
     "name": "Kombibad Mariendorf (Sommerbad)",
     "adresse": "Ankogelweg 95, 12107 Berlin",
@@ -191,42 +174,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=52.421220&mlon=13.403588#map=17/52.421220/13.403588",
     "lat": 52.42122,
     "lon": 13.403588
-  },
-  {
-    "id": 17,
-    "name": "Freibad Guben",
-    "adresse": "Friedrich-Engels-Straße 70a, 03172 Guben",
-    "bundesland": "Brandenburg",
-    "region": "Spree-Neiße",
-    "status": "geschlossen",
-    "begruendung": "Seit 2023 wegen technischer Probleme geschlossen.",
-    "zeitraum": "2023",
-    "quelle": {
-      "titel": "Niederlausitz aktuell: Gubener Freibad ab sofort geschlossen",
-      "url": "https://www.niederlausitz-aktuell.de/spree-neisse/guben/241447/gubener-freibad-ab-sofort-geschlossen.html",
-      "datum": "2023-09-04"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=51.947006&mlon=14.707440#map=17/51.947006/14.707440",
-    "lat": 51.947006,
-    "lon": 14.70744
-  },
-  {
-    "id": 18,
-    "name": "Freibad Kochsagrund (Mutter-Kind-Becken)",
-    "adresse": "Drebkauer Straße 12b, 03130 Spremberg",
-    "bundesland": "Brandenburg",
-    "region": "Spree-Neiße",
-    "status": "geschlossen",
-    "begruendung": "Mutter-Kind-Becken seit 2024 gesperrt.",
-    "zeitraum": "2024",
-    "quelle": {
-      "titel": "Niederlausitz aktuell: Mutter-Kind-Becken im Freibad Kochsagrund gesperrt",
-      "url": "https://www.niederlausitz-aktuell.de/niederlausitz-aktuell/orte/spree-neisse/spremberg/278822/mutter-kind-becken-im-freibad-kochsagrund-gesperrt.html",
-      "datum": "2024-09-04"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=51.575901&mlon=14.354186#map=17/51.575901/14.354186",
-    "lat": 51.575901,
-    "lon": 14.354186
   },
   {
     "id": 19,
@@ -261,24 +208,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=53.597318&mlon=10.177006#map=17/53.597318/10.177006",
     "lat": 53.597318,
     "lon": 10.177006
-  },
-  {
-    "id": 21,
-    "name": "Freibad Erleborn",
-    "adresse": "Erlebrunnenweg 17, 34576 Homberg (Efze)",
-    "bundesland": "Hessen",
-    "region": "Schwalm-Eder-Kreis",
-    "status": "geschlossen",
-    "begruendung": "2024 nicht mehr geöffnet, Abriss begonnen.",
-    "zeitraum": "2024",
-    "quelle": {
-      "titel": "HNA: Abriss im Homberger Freibad Erleborn beginnt",
-      "url": "https://www.hna.de/lokales/fritzlar-homberg/homberg-efze-ort305309/abriss-im-homberger-freibad-erleborn-beginnt-93109750.html",
-      "datum": "2024-06-05"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=51.040946&mlon=9.411978#map=17/51.040946/9.411978",
-    "lat": 51.040946,
-    "lon": 9.411978
   },
   {
     "id": 22,
@@ -375,11 +304,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Sachsen",
     "region": "Sächsische Schweiz-Osterzgebirge",
     "status": "geschlossen",
-    "begruendung": "Saison 2025 wegen Baumaßnahmen geschlossen.",
+    "begruendung": "Seit der Saison 2025 geschlossen. Veraltete Technik und fehlendes Personal zwangen laut Pressebericht zur Schließung; ein belastbarer Neustart für 2026 ist bislang nicht dokumentiert.",
     "zeitraum": "2025",
     "quelle": {
-      "titel": "Gemeinde Gohrisch: Waldbad Cunnersdorf",
-      "url": "https://www.gohrisch.de/tourismus/waldbad-cunnersdorf.html"
+      "titel": "Sächsische.de: Freibad Cunnersdorf geschlossen - kann es gerettet werden?",
+      "url": "https://archive.ph/AEduZ",
+      "datum": "2025-07-17"
     },
     "karte": "https://www.openstreetmap.org/?mlat=50.876555&mlon=14.114730#map=17/50.876555/14.114730",
     "lat": 50.876555,
@@ -462,12 +392,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Baden-Württemberg",
     "region": "Landkreis Lörrach",
     "status": "gefaehrdet",
-    "begruendung": "Teile des Haushalts 2026 wurden von der Kommunalaufsicht nicht genehmigt. Der Haushalt muss neu beraten werden; dadurch ist die Öffnung des Freibads im Sommer 2026 in Gefahr.",
+    "begruendung": "Trotz schwieriger Haushaltslage kann das Freibad im Sommer 2026 voraussichtlich öffnen, weil die Rechtsaufsicht die Vergabe des Betriebs und notwendige Instandsetzungen freigegeben hat. Wegen der weiter prekären Finanzlage bleibt der Fall im Monitor als gefährdet.",
     "zeitraum": "2026",
     "quelle": {
-      "titel": "Schwarzwälder Bote: Warum das Freibad in Steinen diesen Sommer geschlossen bleiben könnte",
-      "url": "https://www.schwarzwaelder-bote.de/inhalt.haushalt-nicht-genehmigt-warum-das-freibad-in-steinen-diesen-sommer-geschlossen-bleiben-koennte.92eaa366-6ea6-4378-8289-5c1d0d0ebcd2.html",
-      "datum": "2026-04-06"
+      "titel": "Schwarzwälder Bote: Freibad kann im Sommer öffnen – trotz schwieriger Haushaltslage",
+      "url": "https://www.schwarzwaelder-bote.de/inhalt.freizeit-in-steinen-freibad-kann-im-sommer-oeffnen-trotz-schwieriger-haushaltslage.04ae275e-694a-44cb-b73d-983ede71fd1c.html",
+      "datum": "2026-04-09"
     },
     "lat": 47.641677,
     "lon": 7.725542,
