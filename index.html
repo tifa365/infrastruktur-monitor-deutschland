@@ -46,9 +46,9 @@
     <!-- Einleitung -->
     <div class="mb-8">
       <p class="text-lg leading-relaxed">
-        <span class="text-5xl font-serif font-bold float-left mr-2 leading-none">D</span>iese Übersicht dokumentiert öffentliche Infrastruktur in Deutschland,
-        die geschlossen oder aufgrund finanzieller Schwierigkeiten gefährdet ist – zunächst Schwimmbäder.
-        Alle Angaben sind quellenbasiert und nachprüfbar.
+        <span class="text-5xl font-serif font-bold float-left mr-2 leading-none">D</span>er Infrastruktur-Monitor startet mit einem Pilotdatensatz
+        zu öffentlichen Schwimmbädern. Erfasst werden Schließungen und Gefährdungen aus finanziellen Gründen, mit klarem Schwerpunkt auf Entwicklungen
+        seit 2020. Alle Angaben sind belegt und überprüfbar.
       </p>
     </div>
 
@@ -158,7 +158,7 @@
       document.getElementById('statistik').innerHTML = `
         <div class="flex-1 p-4 text-center border-r-2 border-black cursor-pointer hover:bg-neutral-100 transition-colors" onclick="setStatusFilter('')">
           <div class="text-4xl font-serif font-bold">${gesamt}</div>
-          <div class="text-xs uppercase tracking-wider mt-1">Erfasst</div>
+          <div class="text-xs uppercase tracking-wider mt-1">Dokumentierte Fälle</div>
         </div>
         <div class="flex-1 p-4 text-center bg-red-600 text-white border-r-2 border-black cursor-pointer hover:bg-red-700 transition-colors" onclick="setStatusFilter('geschlossen')">
           <div class="text-4xl font-serif font-bold">${geschlossen}</div>
