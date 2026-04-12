@@ -10,12 +10,20 @@ Erfassung und Visualisierung von Schließungen öffentlicher Infrastruktur in De
 
 Öffne `index.html` im Browser – keine Installation nötig.
 
+## Entwicklung
+
+- `python3 -m http.server 8000` startet einen lokalen Server
+- `uv run scripts/sync_geodata.py sync` ergänzt OSM-Koordinaten und Kartenlinks
+- `uv run scripts/sync_geodata.py check` prüft, ob alle Einträge `lat`, `lon` und OSM-Links haben
+
 ## Dateien
 
 ```
-├── index.html          # Mockup (lauffähig im Browser)
-├── schwimmbaeder.md    # Datentabelle mit Quellen
-├── quellen.md          # Übersichtsartikel & Recherchequellen
+├── data/schwimmbaeder.js   # Gerenderte Datengrundlage inkl. OSM-Koordinaten
+├── index.html              # Mockup (lauffähig im Browser)
+├── scripts/sync_geodata.py # Geocoding- und Prüfskript
+├── schwimmbaeder.md        # Datentabelle mit Quellen
+├── quellen.md              # Übersichtsartikel & Recherchequellen
 └── README.md
 ```
 

@@ -1,0 +1,5 @@
+[project]
+name = "infrastruktur-monitor"
+version = "0.1.0"
+description = "Static research site and maintenance scripts for the Infrastruktur-Monitor dataset."
+requires-python = ">=3.10"
