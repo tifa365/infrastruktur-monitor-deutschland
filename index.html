@@ -187,11 +187,21 @@
       if (!value) return "–";
       const parsed = new Date(`${value}T00:00:00`);
       if (Number.isNaN(parsed.getTime())) return value;
-      return new Intl.DateTimeFormat('de-DE').format(parsed);
+      return new Intl.DateTimeFormat('de-DE', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+      }).format(parsed);
     }
 
     function renderMeta() {
       document.getElementById('letztesUpdate').textContent = `Letztes Update: ${formatGermanDate(APP_META.lastUpdated)}`;
+    }
+
+    function formatQuelle(eintrag) {
+      const titel = eintrag.quelle?.titel || '';
+      const datum = eintrag.quelle?.datum;
+      return datum ? `${titel}, ${formatGermanDate(datum)}` : titel;
     }
 
     function setStatusFilter(status) {
@@ -237,7 +247,7 @@
                 <h4 class="text-xs font-bold uppercase tracking-wider mb-1">Quelle</h4>
                 <a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs text-neutral-600 hover:text-black border-b border-neutral-300 hover:border-black transition-colors">
                   <sup class="font-bold">${index + 1}</sup>
-                  <span>${eintrag.quelle.titel}</span>
+                  <span>${formatQuelle(eintrag)}</span>
                 </a>
               </div>
               <div class="sm:col-span-2">
@@ -269,7 +279,7 @@
       document.getElementById('quellenverzeichnis').innerHTML = daten.map((eintrag, index) => `
         <p class="mb-2">
           <sup class="font-bold">${index + 1}</sup>
-          <a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer" class="hover:underline">${eintrag.quelle.titel}</a>
+          <a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer" class="hover:underline">${formatQuelle(eintrag)}</a>
         </p>
       `).join('');
     }
