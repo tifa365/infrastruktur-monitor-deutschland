@@ -170,23 +170,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=52.163494&mlon=8.045848#map=17/52.163494/8.045848"
   },
   {
-    "id": 10,
-    "name": "Almarin",
-    "adresse": "Mönchsdeggingen",
-    "bundesland": "Bayern",
-    "region": "Donau-Ries-Kreis",
-    "status": "geschlossen",
-    "begruendung": "Seit 2010 geschlossen, 2017 abgerissen. Gemeinde konnte Betrieb nicht mehr finanzieren.",
-    "zeitraum": "2017",
-    "quelle": {
-      "titel": "Augsburger Allgemeine: Das Almarin ist endgültig Geschichte",
-      "url": "https://www.augsburger-allgemeine.de/noerdlingen/Moenchsdeggingen-Das-Almarin-ist-endgueltig-Geschichte-id40314387.html"
-    },
-    "lat": 48.772436,
-    "lon": 10.572904,
-    "karte": "https://www.openstreetmap.org/?mlat=48.772436&mlon=10.572904#map=17/48.772436/10.572904"
-  },
-  {
     "id": 11,
     "name": "Freizeitbad Waikiki",
     "adresse": "Am Birkenwege 1, 07950 Zeulenroda-Triebes",
@@ -219,23 +202,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=48.853920&mlon=8.213434#map=17/48.853920/8.213434",
     "lat": 48.85392,
     "lon": 8.213434
-  },
-  {
-    "id": 14,
-    "name": "Freibad Egloffstein",
-    "adresse": "Talstraße 117, 91349 Egloffstein",
-    "bundesland": "Bayern",
-    "region": "Landkreis Forchheim",
-    "status": "geschlossen",
-    "begruendung": "2019 geschlossen. Sanierung läuft.",
-    "zeitraum": "2019",
-    "quelle": {
-      "titel": "inFranken: Totaloperation Freibad Egloffstein startet",
-      "url": "https://www.infranken.de/lk/gem/forchheimampfraenkischeschweiz/totaloperation-freibad-egloffstein-startet-art-6275458"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=49.702016&mlon=11.259906#map=17/49.702016/11.259906",
-    "lat": 49.702016,
-    "lon": 11.259906
   },
   {
     "id": 15,
@@ -408,23 +374,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "lon": 10.940683
   },
   {
-    "id": 25,
-    "name": "Freibad Amecke",
-    "adresse": "Sundern-Amecke (am Sorpesee)",
-    "bundesland": "Nordrhein-Westfalen",
-    "region": "Hochsauerlandkreis",
-    "status": "geschlossen",
-    "begruendung": "Seit 2009 nicht mehr betrieben. Rückbau 2024.",
-    "zeitraum": "2009",
-    "quelle": {
-      "titel": "Stadt Sundern: Rückbauarbeiten Freibad Amecke",
-      "url": "https://www.presse-service.de/data.aspx/static/1153371.html"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=51.305708&mlon=7.950750#map=17/51.305708/7.950750",
-    "lat": 51.305708,
-    "lon": 7.95075
-  },
-  {
     "id": 26,
     "name": "Freibad Mählersbeck",
     "adresse": "Mählersbeck, 42279 Wuppertal",
@@ -525,23 +474,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=50.498711&mlon=12.434678#map=17/50.498711/12.434678",
     "lat": 50.498711,
     "lon": 12.434678
-  },
-  {
-    "id": 32,
-    "name": "Waldbad Liesten",
-    "adresse": "Liestener Dorfstraße 30, 29410 Salzwedel",
-    "bundesland": "Sachsen-Anhalt",
-    "region": "Altmarkkreis Salzwedel",
-    "status": "geschlossen",
-    "begruendung": "Seit 2017 geschlossen.",
-    "zeitraum": "2017",
-    "quelle": {
-      "titel": "Volksstimme: Ein Sommer ohne Schwimmen",
-      "url": "https://www.volksstimme.de/lokal/salzwedel/ein-sommer-ohne-schwimmen-1903321"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=52.790328&mlon=11.288154#map=17/52.790328/11.288154",
-    "lat": 52.790328,
-    "lon": 11.288154
   },
   {
     "id": 33,

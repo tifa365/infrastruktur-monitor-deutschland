@@ -33,7 +33,7 @@ Erfassung und Visualisierung von Schließungen öffentlicher Infrastruktur in De
 
 | Status | Anzahl |
 |--------|--------|
-| 🔴 Geschlossen | 29 |
+| 🔴 Geschlossen | 25 |
 | 🟡 Gefährdet | 11 |
 
 **Kriterium:** Öffentliche Bäder mit Finanzen/Haushaltslage als Schließungsgrund.

@@ -17,10 +17,8 @@
 |---------|---------|------------|--------|
 | Lehrschwimmbecken Ohmenhausen (Reutlingen) | Hornstraße 40, 72770 Reutlingen | Technischer Defekt; Reparatur (~100.000 €) nicht finanzierbar, Grundsanierung (Millionenhöhe) nicht stemmbar | [GEA](https://www.gea.de/reutlingen_artikel%2C-b%C3%A4der-in-not-so-ist-the-lage-in-reutlingen-_arid%2C7051435.html) |
 | Stiftsbad (Weinstadt) | – | Prekäre Haushaltslage, Sanierungskosten | [ZVW](https://www.zvw.de/lokales/weinstadt/weinstadt-millionen-sanierung-der-freib%C3%A4der-n%C3%B6tig-stiftsbad-schlie%C3%9Ft-2025_arid-915550) |
-| Almarin (Mönchsdeggingen) | Mönchsdeggingen | Seit 2010 geschlossen, 2017 abgerissen. Gemeinde konnte Betrieb nicht finanzieren | [Augsburger Allgemeine](https://www.augsburger-allgemeine.de/noerdlingen/Moenchsdeggingen-Das-Almarin-ist-endgueltig-Geschichte-id40314387.html) |
 | Freizeitbad Waikiki (Zeulenroda) | Am Birkenwege 1, 07950 Zeulenroda-Triebes | Seit 2024 geschlossen, Insolvenz des Betreibers, Stadt investiert nicht mehr, 10 Mio. € Fördermittel verfallen | [MDR](https://www.mdr.de/nachrichten/thueringen/ost-thueringen/greiz/waikiki-freizeitbad-schliessung-insolvenz-100.html) |
 | Familienfreibad Natura (Rastatt) | Jahnallee 17, 76437 Rastatt | Seit September 2024 geschlossen | [Nussbaum](https://www.nussbaum.de/entdecken/ausflugsziele/natura-familienfreibad-rastatt-nun-geschlossen-1556) |
-| Freibad Egloffstein | Talstraße 117, 91349 Egloffstein | 2019 geschlossen, Sanierung läuft | [inFranken](https://www.infranken.de/lk/gem/forchheimampfraenkischeschweiz/totaloperation-freibad-egloffstein-startet-art-6275458) |
 | Freibad Volkach | Fahrer Straße 1, 97332 Volkach | Seit 2020 wegen Baufälligkeit geschlossen | [Radio Gong Würzburg](https://www.radiogong.com/aktuelles/news/lokales/volkach-tage-fuer-das-freibad-sind-gezaehlt) |
 | Kombibad Mariendorf (Sommerbad) | Ankogelweg 95, 12107 Berlin | Seit Brand im September 2023 geschlossen | [Berliner Bäder-Betriebe](https://www.berlinerbaeder.de/baeder/detail/kombibad-mariendorf-hallenbad/) |
 | Freibad Guben | Friedrich-Engels-Straße 70a, 03172 Guben | Seit 2023 wegen technischer Probleme geschlossen | [Niederlausitz aktuell](https://www.niederlausitz-aktuell.de/spree-neisse/guben/241447/gubener-freibad-ab-sofort-geschlossen.html) |
@@ -31,14 +29,12 @@
 | Maintalbad (Außenbereich) | Edmund-Seng-Straße 19, 63477 Maintal | Ende 2024 geschlossen, Abriss läuft, Neubau bis 2027 | [OP Online](https://www.op-online.de/region/main-kinzig-kreis/maintal/abriss-des-maintalbads-ist-in-vollem-gang-neubau-bis-2027-93716722.html) |
 | Freibad Adendorf | Scharnebecker Weg 19, 21365 Adendorf | Bleibt 2024 und 2025 geschlossen | [Gemeinde Adendorf](https://www.adendorf.de/1/aktiv-in-adendorf/freizeit/freibad/) |
 | Freibad Brome | Mühlenstraße 14, 38465 Brome | Nach erneutem Rohrbruch komplett geschlossen | [Aller-Zeitung](https://www.az-online.de/isenhagener-land/brome/bromes-freibad-nach-rohrbruch-erneut-geschlossen-und-jetzt-93889422.html) |
-| Freibad Amecke (Sundern) | Sundern-Amecke (am Sorpesee) | Seit 2009 nicht mehr betrieben, Rückbau 2024 | [Stadt Sundern](https://www.presse-service.de/data.aspx/static/1153371.html) |
 | Freibad Mählersbeck (Wuppertal) | Mählersbeck, 42279 Wuppertal | Abriss 2020, Neubau verzögert, Wiedereröffnung Mai 2026 | [WAZ](https://www.waz.de/lokales/wuppertal/article409096560/panne-im-freibad-maehlersbeck-um-20-zentimeter-verfehlt.html) |
 | Badepark Haßloch (Außenbereich) | Lachener Weg 175, 67454 Haßloch | Seit Ende Dezember 2024 dauerhaft geschlossen | [Pfalz-Info](https://www.pfalz-info.com/hassloch/badepark-hassloch-39742/) |
 | Warmfreibad Waldmohr | Badstraße 12, 66914 Waldmohr | Ab 2024 wegen Sanierungsarbeiten geschlossen | [VG Oberes Glantal](https://www.vgog.de/vg_oberes_glantal/Sanierung%20Freibad/) |
 | Freibad Landsweiler-Reden | Am Volksbad, 66578 Schiffweiler | Altanlage geschlossen, Neubau 2025 beschlossen | [SR Mediathek](https://sr-mediathek.de/index.php?seite=11&tag=Freibad&s=4) |
 | Waldbad Cunnersdorf | Cunnersdorfer Straße 2b, 01824 Gohrisch | Saison 2025 wegen Baumaßnahmen geschlossen | [Gemeinde Gohrisch](https://www.gohrisch.de/tourismus/waldbad-cunnersdorf.html) |
 | Waldbad Brunn (Auerbach) | Badstraße 1a, 08209 Auerbach OT Brunn | Seit September 2022 komplett geschlossen | [Stadt Auerbach](https://www.stadt-auerbach.de/verzeichnis/visitenkarte.php?mandat=243050) |
-| Waldbad Liesten (Salzwedel) | Liestener Dorfstraße 30, 29410 Salzwedel | Seit 2017 geschlossen | [Volksstimme](https://www.volksstimme.de/lokal/salzwedel/ein-sommer-ohne-schwimmen-1903321) |
 | Ludwigsbad Ilsenburg | Schickendamm 6, 38871 Ilsenburg | Wegen Bauarbeiten geschlossen, Wiedereröffnung 2025 geplant | [Volksstimme](https://www.volksstimme.de/lokal/wernigerode/ist-das-ludwigsbad-in-ilsenburg-2025-wieder-offen-3883341) |
 | Schobüller Freibad (Husum) | Nordseestraße 35, 25813 Husum-Schobüll | Ende September 2022 dauerhaft geschlossen | [Husum-Bad](https://husum-bad.de/freibad/) |
 | Freibad Drelsdorf | Schwimmbad Drelsdorf, 25853 Drelsdorf | Aktuell geschlossen, Neubau 2025 geplant | [Gemeinde Drelsdorf](https://www.drelsdorf.de/schwimmbad/) |
