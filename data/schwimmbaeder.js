@@ -661,5 +661,22 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 47.641677,
     "lon": 7.725542,
     "karte": "https://www.openstreetmap.org/?mlat=47.641677&mlon=7.725542#map=17/47.641677/7.725542"
+  },
+  {
+    "id": 40,
+    "name": "Freibad Blumenthal",
+    "adresse": "Wehrmoor, 28779 Bremen",
+    "bundesland": "Bremen",
+    "region": "Blumenthal",
+    "status": "gefaehrdet",
+    "begruendung": "Nach Informationen des WESER-KURIER will Bremen Wasserflächen einsparen. Dadurch könnte das Blumenthaler Freibad zur Disposition gestellt werden.",
+    "zeitraum": "2025",
+    "quelle": {
+      "titel": "WESER-KURIER: Freibad mit Fragezeichen: Debatte über Wasserflächen",
+      "url": "https://www.weser-kurier.de/bremen/stadtteil-blumenthal/blumenthal-warum-das-freibad-zur-disposition-stehen-koennte-doc80n9msk8fbbp66q146g"
+    },
+    "lat": 53.197672,
+    "lon": 8.580341,
+    "karte": "https://www.openstreetmap.org/?mlat=53.197672&mlon=8.580341#map=17/53.197672/8.580341"
   }
 ];
