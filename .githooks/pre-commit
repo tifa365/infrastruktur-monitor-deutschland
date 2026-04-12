@@ -4,3 +4,4 @@ set -eu
 uv run scripts/update_last_updated.py
 git add data/meta.js
 uv run scripts/sync_geodata.py check
+uv run scripts/check_history.py
