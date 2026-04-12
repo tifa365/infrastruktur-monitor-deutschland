@@ -2,7 +2,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 12,
     "name": "Sport- und Freizeitbad Tatami",
-    "adresse": "Ronneburger Str. 65, 04626 Schmölln",
+    "adresse": "Ronneburger Straße 65, 04626 Schmölln",
     "bundesland": "Thüringen",
     "region": "Altenburger Land",
     "status": "gefaehrdet",
@@ -36,7 +36,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 8,
     "name": "Konradbad",
-    "adresse": "Kölner Str. 214, 41468 Neuss",
+    "adresse": "Kölner Straße 214, 41468 Neuss",
     "bundesland": "Nordrhein-Westfalen",
     "region": "Rhein-Kreis Neuss",
     "status": "gefaehrdet",
@@ -57,11 +57,11 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Nordrhein-Westfalen",
     "region": "Kreis Olpe",
     "status": "gefaehrdet",
-    "begruendung": "Sanierung kostet 5 Mio. Euro. Kommune hat keinen ausgeglichenen Haushalt, muss Millionen in Schulen investieren. Bürgerentscheid am 14.09.2025 über Schließung oder Erhalt. Förderverein kämpft für Erhalt.",
-    "zeitraum": "2025",
+    "begruendung": "Die Schließung wurde im Ratsbürgerentscheid vom 14.09.2025 abgelehnt. Trotzdem bleibt das Bad finanziell unter Druck: Die Stadt bewirbt sich 2026 um 4,3 Mio. Euro Förderung, die Gesamtsanierung wird inzwischen auf 9,4 Mio. Euro geschätzt. Bis die Finanzierung gesichert ist, bleibt der Fall im Monitor als gefährdet.",
+    "zeitraum": "2026",
     "quelle": {
-      "titel": "WDR: Bürger kämpfen um Drolshagener Stadtbad",
-      "url": "https://www1.wdr.de/nachrichten/westfalen-lippe/drolshagen-buergerentscheid-stadtbad-foerderverein-100.html"
+      "titel": "LokalDirekt: Drolshagen bewirbt sich um 4,3 Millionen Euro Förderung für das Stadtbad",
+      "url": "https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad"
     },
     "lat": 51.025681,
     "lon": 7.767077,
@@ -138,7 +138,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 5,
     "name": "Stiftsbad",
-    "adresse": "Weinstadt",
+    "adresse": "Kellereistraße 2, 71384 Weinstadt",
     "bundesland": "Baden-Württemberg",
     "region": "Rems-Murr-Kreis",
     "status": "geschlossen",
@@ -159,10 +159,10 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Niedersachsen",
     "region": "Landkreis Osnabrück",
     "status": "gefaehrdet",
-    "begruendung": "Nach jahrelanger Schließung durch Bürgerinitiative wiedereröffnet. Langfristige Finanzierung weiterhin unsicher.",
-    "zeitraum": "2025",
+    "begruendung": "Die Wiedereröffnung ist für den 15.05.2026 geplant, Saisonkarten werden bereits verkauft. Das Bad bleibt im Monitor vorerst als gefährdet, bis sich Betrieb und Finanzierung über mindestens ein bis zwei Jahre stabilisiert haben.",
+    "zeitraum": "2026",
     "quelle": {
-      "titel": "Freibad Iburg – Bürgerinitiative",
+      "titel": "Freibad Iburg: Wiedereröffnung 2026",
       "url": "https://www.freibadiburg.de/"
     },
     "lat": 52.163494,
@@ -376,7 +376,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 26,
     "name": "Freibad Mählersbeck",
-    "adresse": "Mählersbeck, 42279 Wuppertal",
+    "adresse": "Mählersbeck 71, 42279 Wuppertal",
     "bundesland": "Nordrhein-Westfalen",
     "region": "Wuppertal",
     "status": "geschlossen",
@@ -563,7 +563,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 38,
     "name": "Freibad Stadtroda",
-    "adresse": "Stadtroda",
+    "adresse": "Geraer Straße, 07646 Stadtroda",
     "bundesland": "Thüringen",
     "region": "Saale-Holzland-Kreis",
     "status": "gefaehrdet",
@@ -597,7 +597,7 @@ window.SCHWIMMBAEDER_DATEN = [
   {
     "id": 40,
     "name": "Freibad Blumenthal",
-    "adresse": "Wehrmoor, 28779 Bremen",
+    "adresse": "Am Freibad 5, 28779 Bremen",
     "bundesland": "Bremen",
     "region": "Blumenthal",
     "status": "gefaehrdet",
@@ -607,8 +607,8 @@ window.SCHWIMMBAEDER_DATEN = [
       "titel": "WESER-KURIER: Freibad mit Fragezeichen: Debatte über Wasserflächen",
       "url": "https://www.weser-kurier.de/bremen/stadtteil-blumenthal/blumenthal-warum-das-freibad-zur-disposition-stehen-koennte-doc80n9msk8fbbp66q146g"
     },
-    "lat": 53.197672,
-    "lon": 8.580341,
-    "karte": "https://www.openstreetmap.org/?mlat=53.197672&mlon=8.580341#map=17/53.197672/8.580341"
+    "lat": 53.198816,
+    "lon": 8.579205,
+    "karte": "https://www.openstreetmap.org/?mlat=53.198816&mlon=8.579205#map=17/53.198816/8.579205"
   }
 ];
