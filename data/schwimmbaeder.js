@@ -644,5 +644,22 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 50.860308,
     "lon": 11.739512,
     "karte": "https://www.openstreetmap.org/?mlat=50.860308&mlon=11.739512#map=17/50.860308/11.739512"
+  },
+  {
+    "id": 39,
+    "name": "Freibad Steinen",
+    "adresse": "Lörracher Straße, 79585 Steinen",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Lörrach",
+    "status": "gefaehrdet",
+    "begruendung": "Teile des Haushalts 2026 wurden von der Kommunalaufsicht nicht genehmigt. Der Haushalt muss neu beraten werden; dadurch ist die Öffnung des Freibads im Sommer 2026 in Gefahr.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Schwarzwälder Bote: Warum das Freibad in Steinen diesen Sommer geschlossen bleiben könnte",
+      "url": "https://www.schwarzwaelder-bote.de/inhalt.haushalt-nicht-genehmigt-warum-das-freibad-in-steinen-diesen-sommer-geschlossen-bleiben-koennte.92eaa366-6ea6-4378-8289-5c1d0d0ebcd2.html"
+    },
+    "lat": 47.641677,
+    "lon": 7.725542,
+    "karte": "https://www.openstreetmap.org/?mlat=47.641677&mlon=7.725542#map=17/47.641677/7.725542"
   }
 ];
