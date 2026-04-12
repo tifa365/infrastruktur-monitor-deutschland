@@ -6,11 +6,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Thüringen",
     "region": "Altenburger Land",
     "status": "gefaehrdet",
-    "begruendung": "1,2 Mio. € Fehlbetrag pro Jahr. Stadtwerke können nicht mehr querfinanzieren. Ohne Landeshilfe Schließung am 14.11.2025 geplant.",
+    "begruendung": "Der Betrieb für 2026 ist durch 800.000 Euro Landeshilfe vorerst gesichert. Wegen dauerhaft hoher Betriebskosten und offener Finanzierung für die Folgejahre bleibt das Bad im Monitor als gefährdet.",
     "zeitraum": "2025",
     "quelle": {
-      "titel": "OTZ: Sport- und Freizeitbad im Altenburger Land vor dem Aus",
-      "url": "https://www.otz.de/lokales/altenburger-land/article407480342/ueber-eine-million-euro-minus-sport-und-freizeitbad-im-altenburger-land-vor-dem-aus.html"
+      "titel": "MDR: 800.000 Euro vom Land: Tatami-Bad in Schmölln vorerst gerettet",
+      "url": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/altenburg/schmoelln-tatami-gerette-geld-finanzierung-100.html",
+      "datum": "2025-11-21"
     },
     "karte": "https://www.openstreetmap.org/?mlat=50.892504&mlon=12.336809#map=17/50.892504/12.336809",
     "lat": 50.892504,
@@ -23,11 +24,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Nordrhein-Westfalen",
     "region": "Rhein-Kreis Neuss",
     "status": "gefaehrdet",
-    "begruendung": "In die Jahre gekommen, stark sanierungsbedürftig.",
+    "begruendung": "Für das stark sanierungsbedürftige Stadtbad läuft eine Förderbewerbung des Bundes über bis zu 8 Mio. Euro. Anfang 2026 soll entschieden werden, ob das Bad modernisiert oder geschlossen wird. Bis zur Finanzierungsentscheidung bleibt der Fall gefährdet.",
     "zeitraum": "2025",
     "quelle": {
-      "titel": "Stadt Neuss: Neusser Bäderlandschaft im Fokus",
-      "url": "https://www.neuss.de/presse/meldungen/2025/07/09/neusser-baederlandschaft-im-fokus"
+      "titel": "SPD Neuss: SPD Neuss setzt sich für Stadtbad-Erhalt ein",
+      "url": "https://spd-neuss.de/2025/12/21/spd-neuss-setzt-sich-fuer-stadtbad-erhalt-ein/",
+      "datum": "2025-12-21"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.201551&mlon=6.689098#map=17/51.201551/6.689098",
     "lat": 51.201551,
@@ -61,45 +63,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2026",
     "quelle": {
       "titel": "LokalDirekt: Drolshagen bewirbt sich um 4,3 Millionen Euro Förderung für das Stadtbad",
-      "url": "https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad"
+      "url": "https://lokaldirekt.de/news/drolshagen-bewirbt-sich-um-43-millionen-euro-foerderung-fuer-das-stadtbad",
+      "datum": "2026-01-20"
     },
     "lat": 51.025681,
     "lon": 7.767077,
     "karte": "https://www.openstreetmap.org/?mlat=51.025681&mlon=7.767077#map=17/51.025681/7.767077"
-  },
-  {
-    "id": 1,
-    "name": "Freibad Türnich",
-    "adresse": "Heerstraße 134, 50169 Kerpen",
-    "bundesland": "Nordrhein-Westfalen",
-    "region": "Rhein-Erft-Kreis",
-    "status": "gefaehrdet",
-    "begruendung": "Saisonstart verzögert – Haushalt nicht genehmigt. Öffnung frühestens am 1. Juni.",
-    "zeitraum": "2025",
-    "quelle": {
-      "titel": "Rheinische Anzeigenblätter: Kerpener Bäder öffnen frühestens am 1. Juni",
-      "url": "https://www.rheinische-anzeigenblaetter.de/kerpen/c-nachrichten/kerpener-baeder-oeffnen-fruehestens-am-1-juni_a342173"
-    },
-    "lat": 50.860315,
-    "lon": 6.750878,
-    "karte": "https://www.openstreetmap.org/?mlat=50.860315&mlon=6.750878#map=17/50.860315/6.750878"
-  },
-  {
-    "id": 2,
-    "name": "Erftlagune Vierjahreszeiten-Bad",
-    "adresse": "Bruchhöhe 20, 50170 Kerpen",
-    "bundesland": "Nordrhein-Westfalen",
-    "region": "Rhein-Erft-Kreis",
-    "status": "gefaehrdet",
-    "begruendung": "Saisonstart verzögert – Haushalt nicht genehmigt. Öffnung frühestens am 1. Juni.",
-    "zeitraum": "2025",
-    "quelle": {
-      "titel": "Rheinische Anzeigenblätter: Kerpener Bäder öffnen frühestens am 1. Juni",
-      "url": "https://www.rheinische-anzeigenblaetter.de/kerpen/c-nachrichten/kerpener-baeder-oeffnen-fruehestens-am-1-juni_a342173"
-    },
-    "lat": 50.909079,
-    "lon": 6.68988,
-    "karte": "https://www.openstreetmap.org/?mlat=50.909079&mlon=6.689880#map=17/50.909079/6.689880"
   },
   {
     "id": 3,
@@ -119,23 +88,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "karte": "https://www.openstreetmap.org/?mlat=48.469951&mlon=9.133693#map=17/48.469951/9.133693"
   },
   {
-    "id": 4,
-    "name": "Freibad Beutelsbach",
-    "adresse": "Freibadstraße 23, 71384 Weinstadt",
-    "bundesland": "Baden-Württemberg",
-    "region": "Rems-Murr-Kreis",
-    "status": "gefaehrdet",
-    "begruendung": "Sanierungsbedarf von 8–10 Mio. Euro. Spardruck und prekäre Haushaltslage. Schließung zum Ende der Badesaison 2025 wird diskutiert.",
-    "zeitraum": "2025",
-    "quelle": {
-      "titel": "Stadt Weinstadt: Freibad Beutelsbach",
-      "url": "https://www.weinstadt.de/de/Kultur-Freizeit/Freizeiteinrichtungen/Freizeiteinrichtung?id=11&item=leisureFacility&view=publish"
-    },
-    "lat": 48.80076,
-    "lon": 9.391095,
-    "karte": "https://www.openstreetmap.org/?mlat=48.800760&mlon=9.391095#map=17/48.800760/9.391095"
-  },
-  {
     "id": 5,
     "name": "Stiftsbad",
     "adresse": "Kellereistraße 2, 71384 Weinstadt",
@@ -146,7 +98,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2025",
     "quelle": {
       "titel": "ZVW: Weinstadt – Millionen-Sanierung der Freibäder nötig, Stiftsbad schließt 2025",
-      "url": "https://www.zvw.de/lokales/weinstadt/weinstadt-millionen-sanierung-der-freib%C3%A4der-n%C3%B6tig-stiftsbad-schlie%C3%9Ft-2025_arid-915550"
+      "url": "https://www.zvw.de/lokales/weinstadt/weinstadt-millionen-sanierung-der-freib%C3%A4der-n%C3%B6tig-stiftsbad-schlie%C3%9Ft-2025_arid-915550",
+      "datum": "2025-01-26"
     },
     "lat": 48.80621,
     "lon": 9.387969,
@@ -159,11 +112,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Niedersachsen",
     "region": "Landkreis Osnabrück",
     "status": "gefaehrdet",
-    "begruendung": "Die Wiedereröffnung ist für den 15.05.2026 geplant, Saisonkarten werden bereits verkauft. Das Bad bleibt im Monitor vorerst als gefährdet, bis sich Betrieb und Finanzierung über mindestens ein bis zwei Jahre stabilisiert haben.",
+    "begruendung": "Die Wiedereröffnung ist für den 15.05.2026 geplant. Das Bad wird als Bürgerbad über eine Bürgerbad-gGmbH, breites ehrenamtliches Engagement sowie städtische Zuschüsse von einmalig 400.000 Euro und jährlich 140.000 Euro getragen. Wegen der weiter fragilen Finanzierungsbasis bleibt es im Monitor vorerst als gefährdet.",
     "zeitraum": "2026",
     "quelle": {
-      "titel": "Freibad Iburg: Wiedereröffnung 2026",
-      "url": "https://www.freibadiburg.de/"
+      "titel": "NOZ: Bad Iburger Freibad-Betreiber wollen Saisonstart ohne Bürgermeister feiern",
+      "url": "https://www.noz.de/lokales/bad-iburg/artikel/bad-iburger-freibad-soll-ohne-buergermeister-neu-eroeffnet-werden-50172116",
+      "datum": "2026-03-24"
     },
     "lat": 52.163494,
     "lon": 8.045848,
@@ -214,7 +168,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2020",
     "quelle": {
       "titel": "Radio Gong Würzburg: Volkach – Tage für das Freibad sind gezählt",
-      "url": "https://www.radiogong.com/aktuelles/news/lokales/volkach-tage-fuer-das-freibad-sind-gezaehlt"
+      "url": "https://www.radiogong.com/aktuelles/news/lokales/volkach-tage-fuer-das-freibad-sind-gezaehlt",
+      "datum": "2024-06-28"
     },
     "karte": "https://www.openstreetmap.org/?mlat=49.868145&mlon=10.222414#map=17/49.868145/10.222414",
     "lat": 49.868145,
@@ -248,7 +203,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2023",
     "quelle": {
       "titel": "Niederlausitz aktuell: Gubener Freibad ab sofort geschlossen",
-      "url": "https://www.niederlausitz-aktuell.de/spree-neisse/guben/241447/gubener-freibad-ab-sofort-geschlossen.html"
+      "url": "https://www.niederlausitz-aktuell.de/spree-neisse/guben/241447/gubener-freibad-ab-sofort-geschlossen.html",
+      "datum": "2023-09-04"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.947006&mlon=14.707440#map=17/51.947006/14.707440",
     "lat": 51.947006,
@@ -265,7 +221,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2024",
     "quelle": {
       "titel": "Niederlausitz aktuell: Mutter-Kind-Becken im Freibad Kochsagrund gesperrt",
-      "url": "https://www.niederlausitz-aktuell.de/niederlausitz-aktuell/orte/spree-neisse/spremberg/278822/mutter-kind-becken-im-freibad-kochsagrund-gesperrt.html"
+      "url": "https://www.niederlausitz-aktuell.de/niederlausitz-aktuell/orte/spree-neisse/spremberg/278822/mutter-kind-becken-im-freibad-kochsagrund-gesperrt.html",
+      "datum": "2024-09-04"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.575901&mlon=14.354186#map=17/51.575901/14.354186",
     "lat": 51.575901,
@@ -316,7 +273,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2024",
     "quelle": {
       "titel": "HNA: Abriss im Homberger Freibad Erleborn beginnt",
-      "url": "https://www.hna.de/lokales/fritzlar-homberg/homberg-efze-ort305309/abriss-im-homberger-freibad-erleborn-beginnt-93109750.html"
+      "url": "https://www.hna.de/lokales/fritzlar-homberg/homberg-efze-ort305309/abriss-im-homberger-freibad-erleborn-beginnt-93109750.html",
+      "datum": "2024-06-05"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.040946&mlon=9.411978#map=17/51.040946/9.411978",
     "lat": 51.040946,
@@ -333,28 +291,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2024",
     "quelle": {
       "titel": "OP Online: Abriss des Maintalbads ist in vollem Gang",
-      "url": "https://www.op-online.de/region/main-kinzig-kreis/maintal/abriss-des-maintalbads-ist-in-vollem-gang-neubau-bis-2027-93716722.html"
+      "url": "https://www.op-online.de/region/main-kinzig-kreis/maintal/abriss-des-maintalbads-ist-in-vollem-gang-neubau-bis-2027-93716722.html",
+      "datum": "2025-05-07"
     },
     "karte": "https://www.openstreetmap.org/?mlat=50.143713&mlon=8.829122#map=17/50.143713/8.829122",
     "lat": 50.143713,
     "lon": 8.829122
-  },
-  {
-    "id": 23,
-    "name": "Freibad Adendorf",
-    "adresse": "Scharnebecker Weg 19, 21365 Adendorf",
-    "bundesland": "Niedersachsen",
-    "region": "Landkreis Lüneburg",
-    "status": "geschlossen",
-    "begruendung": "Bleibt 2024 und 2025 geschlossen.",
-    "zeitraum": "2024",
-    "quelle": {
-      "titel": "Gemeinde Adendorf: Freibad",
-      "url": "https://www.adendorf.de/1/aktiv-in-adendorf/freizeit/freibad/"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=53.290552&mlon=10.455441#map=17/53.290552/10.455441",
-    "lat": 53.290552,
-    "lon": 10.455441
   },
   {
     "id": 24,
@@ -367,28 +309,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2025",
     "quelle": {
       "titel": "Aller-Zeitung: Bromes Freibad nach Rohrbruch erneut geschlossen",
-      "url": "https://www.az-online.de/isenhagener-land/brome/bromes-freibad-nach-rohrbruch-erneut-geschlossen-und-jetzt-93889422.html"
+      "url": "https://www.az-online.de/isenhagener-land/brome/bromes-freibad-nach-rohrbruch-erneut-geschlossen-und-jetzt-93889422.html",
+      "datum": "2025-08-19"
     },
     "karte": "https://www.openstreetmap.org/?mlat=52.603318&mlon=10.940683#map=17/52.603318/10.940683",
     "lat": 52.603318,
     "lon": 10.940683
-  },
-  {
-    "id": 26,
-    "name": "Freibad Mählersbeck",
-    "adresse": "Mählersbeck 71, 42279 Wuppertal",
-    "bundesland": "Nordrhein-Westfalen",
-    "region": "Wuppertal",
-    "status": "geschlossen",
-    "begruendung": "Abriss 2020, Neubau verzögert sich. Wiedereröffnung voraussichtlich Mai 2026.",
-    "zeitraum": "2020",
-    "quelle": {
-      "titel": "WAZ: Freibad Mählersbeck – Panne verzögert Neubau",
-      "url": "https://www.waz.de/lokales/wuppertal/article409096560/panne-im-freibad-maehlersbeck-um-20-zentimeter-verfehlt.html"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=51.292256&mlon=7.231809#map=17/51.292256/7.231809",
-    "lat": 51.292256,
-    "lon": 7.231809
   },
   {
     "id": 27,
@@ -414,11 +340,12 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Rheinland-Pfalz",
     "region": "Kusel",
     "status": "geschlossen",
-    "begruendung": "Ab 2024 wegen Sanierungsarbeiten geschlossen.",
-    "zeitraum": "2024",
+    "begruendung": "Die Verbandsgemeinde geht laut RHEINPFALZ davon aus, dass das Bad auch in der Saison 2026 geschlossen bleibt. Die Bauarbeiten sollen voraussichtlich erst Ende 2026 abgeschlossen sein; eine reguläre Wiedereröffnung wird für 2027 angepeilt.",
+    "zeitraum": "2025",
     "quelle": {
-      "titel": "VG Oberes Glantal: Sanierung Freibad",
-      "url": "https://www.vgog.de/vg_oberes_glantal/Sanierung%20Freibad/"
+      "titel": "DIE RHEINPFALZ: Freibad öffnet in der Saison 2026 wohl noch nicht",
+      "url": "https://www.rheinpfalz.de/lokal/kreis-kusel_artikel,-freibad-%C3%B6ffnet-in-der-saison-2026-wohl-noch-nicht-_arid,5823045.html",
+      "datum": "2025-10-17"
     },
     "karte": "https://www.openstreetmap.org/?mlat=49.389915&mlon=7.340121#map=17/49.389915/7.340121",
     "lat": 49.389915,
@@ -486,7 +413,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2024",
     "quelle": {
       "titel": "Volksstimme: Ist das Ludwigsbad in Ilsenburg 2025 wieder offen?",
-      "url": "https://www.volksstimme.de/lokal/wernigerode/ist-das-ludwigsbad-in-ilsenburg-2025-wieder-offen-3883341"
+      "url": "https://www.volksstimme.de/lokal/wernigerode/ist-das-ludwigsbad-in-ilsenburg-2025-wieder-offen-3883341",
+      "datum": "2024-07-17"
     },
     "karte": "https://www.openstreetmap.org/?mlat=51.861065&mlon=10.674952#map=17/51.861065/10.674952",
     "lat": 51.861065,
@@ -510,57 +438,6 @@ window.SCHWIMMBAEDER_DATEN = [
     "lon": 9.003226
   },
   {
-    "id": 35,
-    "name": "Freibad Drelsdorf",
-    "adresse": "Schwimmbad Drelsdorf, 25853 Drelsdorf",
-    "bundesland": "Schleswig-Holstein",
-    "region": "Nordfriesland",
-    "status": "geschlossen",
-    "begruendung": "Aktuell geschlossen. Neubau 2025 geplant.",
-    "zeitraum": "2021",
-    "quelle": {
-      "titel": "Gemeinde Drelsdorf: Förderverein Schwimmbad",
-      "url": "https://www.drelsdorf.de/schwimmbad/"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=54.611844&mlon=9.082340#map=17/54.611844/9.082340",
-    "lat": 54.611844,
-    "lon": 9.08234
-  },
-  {
-    "id": 36,
-    "name": "Freibad Möbisburg",
-    "adresse": "Mühlgarten 7, 99094 Erfurt",
-    "bundesland": "Thüringen",
-    "region": "Erfurt",
-    "status": "geschlossen",
-    "begruendung": "Saison 2024 wegen Sanierungsarbeiten geschlossen.",
-    "zeitraum": "2024",
-    "quelle": {
-      "titel": "Hansefit: Freibad Möbisburg",
-      "url": "https://hansefit.de/de/studio-finden/erfurt/schwimmbad/freibad-mobisburg/"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=50.924012&mlon=10.989481#map=17/50.924012/10.989481",
-    "lat": 50.924012,
-    "lon": 10.989481
-  },
-  {
-    "id": 37,
-    "name": "Waldbad Plaue",
-    "adresse": "Am Bahndamm, 99338 Plaue",
-    "bundesland": "Thüringen",
-    "region": "Ilm-Kreis",
-    "status": "geschlossen",
-    "begruendung": "Schließung ab 11. August 2025.",
-    "zeitraum": "2025",
-    "quelle": {
-      "titel": "Stadt Plaue: Waldschwimmbad Plaue",
-      "url": "https://www.stadt-plaue.de/verzeichnis/visitenkarte.php?mandat=169297"
-    },
-    "karte": "https://www.openstreetmap.org/?mlat=50.778925&mlon=10.909943#map=17/50.778925/10.909943",
-    "lat": 50.778925,
-    "lon": 10.909943
-  },
-  {
     "id": 38,
     "name": "Freibad Stadtroda",
     "adresse": "Geraer Straße, 07646 Stadtroda",
@@ -571,7 +448,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2026",
     "quelle": {
       "titel": "OTZ: Sommer ohne Badespaß? – Stadtrodaer Freibad steht vor Zwangsschließung",
-      "url": "https://www.otz.de/lokales/saale-holzland-kreis/article411653981/sommer-ohne-badespass-stadtrodaer-freibad-steht-vor-zwangsschliessung.html"
+      "url": "https://www.otz.de/lokales/saale-holzland-kreis/article411653981/sommer-ohne-badespass-stadtrodaer-freibad-steht-vor-zwangsschliessung.html",
+      "datum": "2026-04-07"
     },
     "lat": 50.860308,
     "lon": 11.739512,
@@ -588,7 +466,8 @@ window.SCHWIMMBAEDER_DATEN = [
     "zeitraum": "2026",
     "quelle": {
       "titel": "Schwarzwälder Bote: Warum das Freibad in Steinen diesen Sommer geschlossen bleiben könnte",
-      "url": "https://www.schwarzwaelder-bote.de/inhalt.haushalt-nicht-genehmigt-warum-das-freibad-in-steinen-diesen-sommer-geschlossen-bleiben-koennte.92eaa366-6ea6-4378-8289-5c1d0d0ebcd2.html"
+      "url": "https://www.schwarzwaelder-bote.de/inhalt.haushalt-nicht-genehmigt-warum-das-freibad-in-steinen-diesen-sommer-geschlossen-bleiben-koennte.92eaa366-6ea6-4378-8289-5c1d0d0ebcd2.html",
+      "datum": "2026-04-06"
     },
     "lat": 47.641677,
     "lon": 7.725542,
@@ -601,14 +480,138 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Bremen",
     "region": "Blumenthal",
     "status": "gefaehrdet",
-    "begruendung": "Nach Informationen des WESER-KURIER will Bremen Wasserflächen einsparen. Dadurch könnte das Blumenthaler Freibad zur Disposition gestellt werden.",
-    "zeitraum": "2025",
+    "begruendung": "Nach der Aus-Debatte wird nun über Investitionen in das Freibad auch mithilfe von Bürgern gesprochen. Die Lage wirkt damit vorläufig entschärft, bleibt wegen offener Bedingungen und Finanzierungsfragen aber weiter gefährdet.",
+    "zeitraum": "2026",
     "quelle": {
-      "titel": "WESER-KURIER: Freibad mit Fragezeichen: Debatte über Wasserflächen",
-      "url": "https://www.weser-kurier.de/bremen/stadtteil-blumenthal/blumenthal-warum-das-freibad-zur-disposition-stehen-koennte-doc80n9msk8fbbp66q146g"
+      "titel": "WESER-KURIER: Partnerschaft fürs Freibad: Bündnis ohne Bedingung, bitte",
+      "url": "https://www.weser-kurier.de/bremen/stadtteil-blumenthal/freibad-blumenthal-warum-vorgaben-fuers-spendenprojekt-schlecht-waeren-doc85c9tf0d65s1gi9a946w",
+      "datum": "2026-04-11"
     },
     "lat": 53.198816,
     "lon": 8.579205,
     "karte": "https://www.openstreetmap.org/?mlat=53.198816&mlon=8.579205#map=17/53.198816/8.579205"
+  },
+  {
+    "id": 41,
+    "name": "Freibad Strümpfelbach",
+    "adresse": "Freibad Strümpfelbach, 71384 Weinstadt",
+    "bundesland": "Baden-Württemberg",
+    "region": "Rems-Murr-Kreis",
+    "status": "gefaehrdet",
+    "begruendung": "Die Stadt Weinstadt nennt das Bad 2025 im Zuge der Haushaltskonsolidierung ausdrücklich als Kandidat für eine stufenweise Schließung; für Strümpfelbach ist das Ende der Sommersaison 2027 genannt.",
+    "zeitraum": "2025",
+    "quelle": {
+      "titel": "Stadt Weinstadt: Finanzlage / Grundsatzentscheidungen",
+      "url": "https://www.weinstadt.de/de/Aktuelles/temp.Projekte/Finanzlage-Grundsatzentscheidungen",
+      "datum": "2025-07-02"
+    },
+    "lat": 48.778193,
+    "lon": 9.37268,
+    "karte": "https://www.openstreetmap.org/?mlat=48.778193&mlon=9.372680#map=17/48.778193/9.372680"
+  },
+  {
+    "id": 42,
+    "name": "Hallenbad Karlsfeld",
+    "adresse": "Hallenbad Karlsfeld, 85757 Karlsfeld",
+    "bundesland": "Bayern",
+    "region": "Landkreis Dachau",
+    "status": "geschlossen",
+    "begruendung": "Der Gemeinderat beschloss im Oktober 2025 die Betriebsaufgabe und den Abriss. Das Bad ist seit 2022 außer Betrieb; Sanierung und Weiterbetrieb wurden wegen der finanziellen Lage der Gemeinde verworfen.",
+    "zeitraum": "2025",
+    "quelle": {
+      "titel": "Gemeinde Karlsfeld: Gemeinderatssitzung Nr. 09 vom 23.10.2025",
+      "url": "https://www.karlsfeld.de/gemeinderatsitzung-nr-09-23102025"
+    },
+    "lat": 48.230893,
+    "lon": 11.466893,
+    "karte": "https://www.openstreetmap.org/?mlat=48.230893&mlon=11.466893#map=17/48.230893/11.466893"
+  },
+  {
+    "id": 43,
+    "name": "Hallenbad Schönwald",
+    "adresse": "Hallenbad Schönwald, 78141 Schönwald im Schwarzwald",
+    "bundesland": "Baden-Württemberg",
+    "region": "Schwarzwald-Baar-Kreis",
+    "status": "geschlossen",
+    "begruendung": "Die Gemeinde erklärte 2023 die dauerhafte Schließung. In der kommunalen Begründung wird der Finanzbezug klar benannt: laufender Betrieb und notwendige Neuinvestitionen seien nicht tragbar.",
+    "zeitraum": "2023",
+    "quelle": {
+      "titel": "Gemeinde Schönwald: Hallenbad ab sofort dauerhaft geschlossen",
+      "url": "https://www.schoenwald.net/hallenbad-schoenwald-ab-sofort-dauerhaft-geschlossen/"
+    },
+    "lat": 48.105768,
+    "lon": 8.195194,
+    "karte": "https://www.openstreetmap.org/?mlat=48.105768&mlon=8.195194#map=17/48.105768/8.195194"
+  },
+  {
+    "id": 44,
+    "name": "Hallenbad Langenzenn",
+    "adresse": "Hallenbad Langenzenn, 90579 Langenzenn",
+    "bundesland": "Bayern",
+    "region": "Landkreis Fürth",
+    "status": "geschlossen",
+    "begruendung": "Die Stadtwerke kündigten 2025 die dauerhafte Schließung zum 31.07.2025 an. In den kommunalen Unterlagen heißt es ausdrücklich, dass weder Neubau noch Sanierung finanziell stemmbar sind.",
+    "zeitraum": "2025",
+    "quelle": {
+      "titel": "Stadtwerke Langenzenn: Schließung Hallenbad",
+      "url": "https://www.stadtwerke-langenzenn.de/wir-sind-da/aktuelles/2447/schliessung-hallenbad"
+    },
+    "lat": 49.488588,
+    "lon": 10.785605,
+    "karte": "https://www.openstreetmap.org/?mlat=49.488588&mlon=10.785605#map=17/49.488588/10.785605"
+  },
+  {
+    "id": 45,
+    "name": "Gartenhallenbad Aichtal-Neuenhaus",
+    "adresse": "Gartenhallenbad Aichtal-Neuenhaus, 72631 Aichtal",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Esslingen",
+    "status": "gefaehrdet",
+    "begruendung": "Die Stadt erklärt 2026, dass Sanierung und laufende Kosten nicht finanzierbar seien. Für den Betrieb entsteht jährlich eine hohe Lücke; wegen der kritischen Haushaltslage steht eine Einstellung zum Ende des Schuljahres 2025/2026 im Raum.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Stadt Aichtal: Aichtal sucht Unterstützung für Hallenbad",
+      "url": "https://www.aichtal.de/unsere-stadt/aktuelles/aktuelles/819/aichtal-sucht-unterstuetzung-fuer-hallenbad",
+      "datum": "2025-11-11"
+    },
+    "lat": 48.620935,
+    "lon": 9.202595,
+    "karte": "https://www.openstreetmap.org/?mlat=48.620935&mlon=9.202595#map=17/48.620935/9.202595"
+  },
+  {
+    "id": 46,
+    "name": "Hallenbad Oberschleißheim",
+    "adresse": "Hallenbad Oberschleißheim, 85764 Oberschleißheim",
+    "bundesland": "Bayern",
+    "region": "Landkreis München",
+    "status": "gefaehrdet",
+    "begruendung": "Anfang 2026 drohte die Schließung bereits zum 01.04.2026. Vorläufig gerettet wurde das Bad nur durch eine private Spende; zugleich stehen Millionen-Defizite und hoher Investitionsbedarf im Raum.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Süddeutsche Zeitung: Hallenbad Oberschleißheim vorerst gerettet",
+      "url": "https://www.sueddeutsche.de/muenchen/landkreismuenchen/hallenbad-oberschleissheim-rettung-spende-schreiner-group-li.3384877",
+      "datum": "2026-02-11"
+    },
+    "lat": 48.257985,
+    "lon": 11.547885,
+    "karte": "https://www.openstreetmap.org/?mlat=48.257985&mlon=11.547885#map=17/48.257985/11.547885"
+  },
+  {
+    "id": 47,
+    "name": "Hallenbad Neuenburg am Rhein",
+    "adresse": "Hallenbad Neuenburg am Rhein, 79395 Neuenburg am Rhein",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Breisgau-Hochschwarzwald",
+    "status": "gefaehrdet",
+    "begruendung": "Die Stadt erklärte 2026, dass eine Schließung zwar noch nicht beschlossen sei, wegen hoher Defizite und eines sehr hohen Sanierungsbedarfs aber offen diskutiert werden müsse.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Stadt Neuenburg am Rhein: Einwohnerversammlung zur Finanzlage und Haushaltskonsolidierung",
+      "url": "https://www.neuenburg.de/site/Neuenburg2020/node/5088540/einwohnerversammlung_zur_finanzlage_und_haushaltskonsolidierung_in_neuenburg_am_rhein.html",
+      "datum": "2026-02-06"
+    },
+    "lat": 47.814357,
+    "lon": 7.568595,
+    "karte": "https://www.openstreetmap.org/?mlat=47.814357&mlon=7.568595#map=17/47.814357/7.568595"
   }
 ];
