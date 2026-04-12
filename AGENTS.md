@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-This repository is a lightweight static site. `index.html` contains the UI and browser logic. `data/schwimmbaeder.js` is the source of truth for rendered entries. `schwimmbaeder.md` is the public research table, and `scripts/sync_geodata.py` maintains OSM coordinates and map links.
+This repository is a lightweight static site. `index.html` contains the UI and browser logic. `data/schwimmbaeder.js` is the source of truth for rendered entries, and `data/meta.js` stores the visible last-update date. `schwimmbaeder.md` is the public research table.
 
 ## Build, Test, and Development Commands
 There is no build step or dependency install.
@@ -9,6 +9,7 @@ There is no build step or dependency install.
 - `xdg-open index.html` opens the mockup directly in a browser.
 - `python3 -m http.server 8000` serves the repo locally for browser testing.
 - `curl -I http://127.0.0.1:8000/` checks that the local server responds.
+- `uv run scripts/update_last_updated.py` refreshes `data/meta.js` with today's date.
 - `uv run scripts/sync_geodata.py sync` geocodes entries with Photon and writes OSM `lat`/`lon` plus `karte`.
 - `uv run scripts/sync_geodata.py check` fails if any entry is missing OSM geodata.
 
@@ -21,10 +22,11 @@ Use 2-space indentation in HTML and inline JavaScript. Keep data objects consist
 When adding or editing an entry:
 
 1. Update `data/schwimmbaeder.js`.
-2. Run `uv run scripts/sync_geodata.py sync`.
-3. Run `uv run scripts/sync_geodata.py check`.
-4. Mirror the content change in `schwimmbaeder.md` when it affects the published table.
-5. Verify the address link opens the expected OSM location in the browser.
+2. Run `uv run scripts/update_last_updated.py`.
+3. Run `uv run scripts/sync_geodata.py sync`.
+4. Run `uv run scripts/sync_geodata.py check`.
+5. Mirror the content change in `schwimmbaeder.md` when it affects the published table.
+6. Verify the address link opens the expected OSM location in the browser.
 
 Local enforcement exists through `.githooks/pre-commit`. Enable it once with `git config core.hooksPath .githooks`.
 

@@ -13,14 +13,17 @@ Erfassung und Visualisierung von Schließungen öffentlicher Infrastruktur in De
 ## Entwicklung
 
 - `python3 -m http.server 8000` startet einen lokalen Server
+- `uv run scripts/update_last_updated.py` setzt `data/meta.js` auf das heutige Datum
 - `uv run scripts/sync_geodata.py sync` ergänzt OSM-Koordinaten und Kartenlinks
 - `uv run scripts/sync_geodata.py check` prüft, ob alle Einträge `lat`, `lon` und OSM-Links haben
 
 ## Dateien
 
 ```
+├── data/meta.js            # Letztes Update für die Oberfläche
 ├── data/schwimmbaeder.js   # Gerenderte Datengrundlage inkl. OSM-Koordinaten
 ├── index.html              # Mockup (lauffähig im Browser)
+├── scripts/update_last_updated.py # Aktualisiert das sichtbare Letzte-Update-Datum
 ├── scripts/sync_geodata.py # Geocoding- und Prüfskript
 ├── schwimmbaeder.md        # Datentabelle mit Quellen
 ├── quellen.md              # Übersichtsartikel & Recherchequellen
