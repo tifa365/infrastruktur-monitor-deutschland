@@ -60,8 +60,10 @@
     </div>
 
     <!-- Statistik -->
-    <div id="statistik" class="flex gap-0 mb-8 border-2 border-black">
-      <!-- Wird per JS gefüllt -->
+    <div class="mb-8">
+      <div id="statistik" class="flex gap-0 border-2 border-black">
+        <!-- Wird per JS gefüllt -->
+      </div>
     </div>
 
     <!-- Filter -->
@@ -114,9 +116,10 @@
 
   <!-- Footer -->
   <footer class="bg-black text-white mt-12">
-    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+    <div id="methodik-footer" class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
       <div>Daten: lokale Medien & Kommunen</div>
-      <div>Lizenz: CC BY 4.0</div>
+      <div><a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">Lizenz: CC BY 4.0</a></div>
+      <div><a href="bestand.html" class="underline hover:no-underline">Bestand &amp; Methodik</a></div>
       <div id="letztesUpdate">Letztes Update: –</div>
     </div>
   </footer>
@@ -166,7 +169,7 @@
 
       document.getElementById('statistik').innerHTML = `
         <div class="flex-1 p-4 text-center border-r-2 border-black cursor-pointer hover:bg-neutral-100 transition-colors" onclick="setStatusFilter('')">
-          <div class="text-4xl font-serif font-bold">${gesamt}</div>
+          <div class="text-4xl font-serif font-bold"><a href="bestand.html" title="Bestand und Methodik">${gesamt}<span class="align-super text-lg ml-0.5">*</span></a></div>
           <div class="text-xs uppercase tracking-wider mt-1">Dokumentierte Fälle</div>
         </div>
         <div class="flex-1 p-4 text-center bg-red-600 text-white border-r-2 border-black cursor-pointer hover:bg-red-700 transition-colors" onclick="setStatusFilter('geschlossen')">

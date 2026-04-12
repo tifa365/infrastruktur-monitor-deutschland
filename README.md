@@ -23,6 +23,7 @@ Erfassung und Visualisierung von Schließungen öffentlicher Infrastruktur in De
 ```
 ├── data/meta.js            # Letztes Update für die Oberfläche
 ├── data/schwimmbaeder.js   # Gerenderte Datengrundlage inkl. OSM-Koordinaten
+├── bestand.html            # Separate Seite zu Bestand, Methodik und Quellenlage
 ├── index.html              # Mockup (lauffähig im Browser)
 ├── scripts/check_history.py       # Prüft, ob relevante Umklassifizierungen im Verlauf dokumentiert sind
 ├── scripts/update_last_updated.py # Aktualisiert das sichtbare Letzte-Update-Datum
@@ -60,6 +61,10 @@ Erfassung und Visualisierung von Schließungen öffentlicher Infrastruktur in De
 - Offizielle Mitteilungen der Kommunen
 - Ratsunterlagen / Amtsblätter
 - Betreiberwebseiten
+
+## Methodische Einordnung
+
+Für die Gesamtzahl öffentlicher Schwimmbäder gibt es keine exakte aktuelle Bundesstatistik. Die separate Seite [bestand.html](bestand.html) bündelt die Einordnung des Monitors mit Verweisen auf die Antwort der Bundesregierung auf eine Kleine Anfrage, den DGfdB-Bäderatlas und die KfW.
 
 ## Tech-Stack (Mockup)
 
