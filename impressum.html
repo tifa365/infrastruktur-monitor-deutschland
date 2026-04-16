@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | Infrastruktur-Monitor Deutschland</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media (min-width: 1024px) {
+      html {
+        font-size: 90%;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white">
+  <header class="border-b-4 border-black">
+    <div class="max-w-4xl mx-auto px-6 py-6">
+      <a href="index.html" class="block text-center hover:opacity-80 transition-opacity">
+        <p class="text-xs uppercase tracking-widest mb-2">Recherche · Dokumentation · Transparenz</p>
+        <h1 class="font-serif text-3xl sm:text-4xl font-black leading-none">
+          Infrastruktur-Monitor
+        </h1>
+        <p class="font-serif text-3xl sm:text-4xl mt-1 italic leading-none">Deutschland</p>
+        <div class="w-16 h-1 bg-black mx-auto mt-4"></div>
+      </a>
+    </div>
+  </header>
+
+  <div class="bg-yellow-300 border-b-2 border-black">
+    <div class="max-w-4xl mx-auto px-6 py-3">
+      <p class="text-sm font-bold uppercase tracking-wider text-center">
+        Rechtliche Angaben
+      </p>
+    </div>
+  </div>
+
+  <main class="max-w-4xl mx-auto px-6 py-8">
+    <div class="mb-8">
+      <h2 class="font-serif text-3xl sm:text-4xl font-black leading-tight mb-4">
+        Impressum
+      </h2>
+      <p class="text-lg leading-relaxed">
+        Die Seite ist vorbereitet, aber noch nicht rechtsverbindlich vollständig ausgefüllt. Für ein vollständiges
+        Impressum müssen die Betreiberangaben ergänzt werden.
+      </p>
+    </div>
+
+    <section class="mb-8 pt-6 border-t-2 border-black">
+      <h3 class="font-bold uppercase tracking-wider text-sm mb-3">Angaben gemäß § 5 DDG</h3>
+      <div class="space-y-3 text-sm leading-relaxed">
+        <p><strong>Name / Anbieter:</strong> <span class="text-neutral-500">bitte ergänzen</span></p>
+        <p><strong>Ladungsfähige Anschrift:</strong> <span class="text-neutral-500">bitte ergänzen</span></p>
+        <p><strong>E-Mail:</strong> <span class="text-neutral-500">bitte ergänzen</span></p>
+        <p><strong>Telefon:</strong> <span class="text-neutral-500">optional ergänzen</span></p>
+      </div>
+    </section>
+
+    <section class="mb-8 pt-6 border-t-2 border-black">
+      <h3 class="font-bold uppercase tracking-wider text-sm mb-3">Verantwortlich für den Inhalt</h3>
+      <p class="text-sm leading-relaxed">
+        <span class="text-neutral-500">bitte ergänzen</span>
+      </p>
+    </section>
+
+    <section class="pt-6 border-t-2 border-black">
+      <h3 class="font-bold uppercase tracking-wider text-sm mb-3">Hinweis</h3>
+      <p class="text-sm leading-relaxed">
+        Diese Vorlage ersetzt keine rechtliche Prüfung. Für die Veröffentlichung werden insbesondere Name,
+        ladungsfähige Anschrift und eine unmittelbare Kontaktmöglichkeit benötigt.
+      </p>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white mt-12">
+    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+      <div><a href="index.html" class="underline hover:no-underline">Zurück zum Monitor</a></div>
+      <div><a href="bestand.html" class="underline hover:no-underline">Bestand &amp; Methodik</a></div>
+      <div><a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">Lizenz: CC BY 4.0</a></div>
+      <div id="letztesUpdate">Letztes Update: –</div>
+    </div>
+  </footer>
+
+  <script src="data/meta.js"></script>
+  <script>
+    const APP_META = window.APP_META || {};
+
+    function formatGermanDate(value) {
+      if (!value) return '–';
+      const parsed = new Date(`${value}T00:00:00`);
+      if (Number.isNaN(parsed.getTime())) return value;
+      return new Intl.DateTimeFormat('de-DE').format(parsed);
+    }
+
+    document.getElementById('letztesUpdate').textContent = `Letztes Update: ${formatGermanDate(APP_META.lastUpdated)}`;
+  </script>
+</body>
+</html>
