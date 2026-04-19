@@ -51,6 +51,7 @@
 | Gartenhallenbad Aichtal-Neuenhaus | Gartenhallenbad Aichtal-Neuenhaus, 72631 Aichtal | Stadt kann Sanierung und laufende Kosten nicht finanzieren; Betriebseinstellung zum Ende des Schuljahres 2025/2026 steht im Raum | [Stadt Aichtal](https://www.aichtal.de/unsere-stadt/aktuelles/aktuelles/819/aichtal-sucht-unterstuetzung-fuer-hallenbad) |
 | Hallenbad Oberschleißheim | Hallenbad Oberschleißheim, 85764 Oberschleißheim | Anfang 2026 drohte die Schließung; vorerst nur durch private Spende gerettet, Defizite und Investitionsbedarf bleiben hoch | [Süddeutsche Zeitung](https://www.sueddeutsche.de/muenchen/landkreismuenchen/hallenbad-oberschleissheim-rettung-spende-schreiner-group-li.3384877) |
 | Hallenbad Neuenburg am Rhein | Hallenbad Neuenburg am Rhein, 79395 Neuenburg am Rhein | Hohe laufende Defizite und sehr hoher Sanierungsbedarf; Schließung 2026 offen diskutiert | [Stadt Neuenburg am Rhein](https://www.neuenburg.de/site/Neuenburg2020/node/5088540/einwohnerversammlung_zur_finanzlage_und_haushaltskonsolidierung_in_neuenburg_am_rhein.html) |
+| Schwimmhalle Klotzsche | Zum Windkanal 14, 01109 Dresden | Statische Mängel laut Gutachten; ohne Sicherungsmaßnahmen droht Anfang September 2026 die Sperrung, die fast 4 Mio. Euro teure Not-Sanierung ist finanziell nicht gesichert | [Antenne Sachsen](https://www.antennesachsen.de/beitrag/muss-die-schwimmhalle-in-klotzsche-bald-schliessen-888230/) |
 
 ---
 

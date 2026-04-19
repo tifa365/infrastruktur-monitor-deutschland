@@ -543,5 +543,23 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 47.814357,
     "lon": 7.568595,
     "karte": "https://www.openstreetmap.org/?mlat=47.814357&mlon=7.568595#map=17/47.814357/7.568595"
+  },
+  {
+    "id": 48,
+    "name": "Schwimmhalle Klotzsche",
+    "adresse": "Zum Windkanal 14, 01109 Dresden",
+    "bundesland": "Sachsen",
+    "region": "Dresden Klotzsche",
+    "status": "gefaehrdet",
+    "begruendung": "Die alte Schwimmhalle weist laut Gutachten statische Mängel auf. Ohne Sicherungsmaßnahmen droht Anfang September 2026 die Sperrung; zugleich kostet eine Not-Sanierung fast 4 Mio. Euro, die Dresden derzeit nicht gesichert hat.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Antenne Sachsen: Muss die Schwimmhalle in Klotzsche bald schließen?",
+      "url": "https://www.antennesachsen.de/beitrag/muss-die-schwimmhalle-in-klotzsche-bald-schliessen-888230/",
+      "datum": "2026-03-03"
+    },
+    "lat": 51.134644,
+    "lon": 13.780754,
+    "karte": "https://www.openstreetmap.org/?mlat=51.134644&mlon=13.780754#map=17/51.134644/13.780754"
   }
 ];

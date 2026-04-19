@@ -159,3 +159,9 @@ Verlaufstracker für Umklassifizierungen und wichtige Statusereignisse, ohne die
 | Datum | Live-Status | Ereignis | Quelle |
 |-------|-------------|----------|--------|
 | 2026-04-07 | `aus_liste_entfernt` | Die Erfurter Bäder veröffentlichen für 2026 wieder Öffnungszeiten; für das Freibad Möbisburg ist die Wiedereröffnung nach der Sanierung für den 05.06.2026 angekündigt. Deshalb kein aktueller Live-Schließungsfall mehr. | https://www.baeder-erfurt.de/baeder/oeffnungszeiten |
+
+### Schwimmhalle Klotzsche
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2026-03-03 | `gefaehrdet` | Erstmeldung: Laut Statikern muss die Halle Anfang September 2026 gesperrt werden, falls bis dahin keine Sicherungsmaßnahmen erfolgen. Die Not-Sanierung würde fast 4 Mio. Euro kosten; diese Mittel sind derzeit nicht gesichert. | https://www.antennesachsen.de/beitrag/muss-die-schwimmhalle-in-klotzsche-bald-schliessen-888230/ |
