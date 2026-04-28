@@ -71,6 +71,9 @@
 
     #map {
       height: 680px;
+      background:
+        radial-gradient(circle at top right, rgba(240, 214, 73, 0.18), transparent 36%),
+        linear-gradient(180deg, #f6f2ea 0%, #efebe1 100%);
     }
 
     @media (max-width: 640px) {
@@ -86,6 +89,12 @@
 
     .leaflet-popup-content {
       margin: 10px 12px;
+    }
+
+    .leaflet-container {
+      background:
+        radial-gradient(circle at top right, rgba(240, 214, 73, 0.18), transparent 36%),
+        linear-gradient(180deg, #f6f2ea 0%, #efebe1 100%);
     }
 
     @media (max-width: 640px) {
@@ -965,8 +974,8 @@
 
       mapInstance = L.map('map', { zoomControl: true, scrollWheelZoom: false });
 
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 18,
       }).addTo(mapInstance);
 
