@@ -622,22 +622,22 @@
           <div class="text-4xl font-serif font-bold">${gesamt}<span class="align-super text-lg ml-0.5">*</span></div>
           <div class="text-xs uppercase tracking-wider mt-1">Dokumentierte Fälle</div>
         </div>
-        <div class="flex-1 p-4 text-center bg-red-600 text-white border-r-2 border-black cursor-pointer hover:bg-red-700 transition-colors" onclick="setStatusFilter('geschlossen')">
+        <div class="flex-1 p-4 text-center bg-red-600 text-white border-r-2 border-black cursor-pointer hover:bg-red-700 transition-colors" onclick="jumpToStatus('geschlossen')">
           <div class="text-4xl font-serif font-bold">${geschlossen}</div>
           <div class="text-xs uppercase tracking-wider mt-1">Geschlossen</div>
         </div>
-        <div class="flex-1 p-4 text-center bg-orange-500 text-white cursor-pointer hover:bg-orange-600 transition-colors" onclick="setStatusFilter('gefaehrdet')">
+        <div class="flex-1 p-4 text-center bg-orange-500 text-white cursor-pointer hover:bg-orange-600 transition-colors" onclick="jumpToStatus('gefaehrdet')">
           <div class="text-4xl font-serif font-bold">${gefaehrdet}</div>
           <div class="text-xs uppercase tracking-wider mt-1">Gefährdet</div>
         </div>
       `;
 
       document.getElementById('mobileStatistik').innerHTML = `
-        <button type="button" class="mobile-signal red text-left" onclick="setStatusFilter('geschlossen')">
+        <button type="button" class="mobile-signal red text-left" onclick="jumpToStatus('geschlossen')">
           <strong>${geschlossen}</strong>
           <span>Geschlossen</span>
         </button>
-        <button type="button" class="mobile-signal orange text-left" onclick="setStatusFilter('gefaehrdet')">
+        <button type="button" class="mobile-signal orange text-left" onclick="jumpToStatus('gefaehrdet')">
           <strong>${gefaehrdet}</strong>
           <span>Gefährdet</span>
         </button>
@@ -674,6 +674,20 @@
       document.getElementById('statusFilter').value = status;
       render();
       document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function jumpToStatus(status) {
+      mobilePanel = 'list';
+      updateMobilePanel();
+
+      requestAnimationFrame(() => {
+        const target = document.querySelector(`[data-status="${status}"]`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+        document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth' });
+      });
     }
 
     function setJahrFilter(jahr) {
@@ -770,7 +784,7 @@
       const statusLabel = eintrag.status === 'geschlossen' ? 'Geschlossen' : 'Gefährdet';
 
       return `
-        <article data-eintrag-id="${eintrag.id}" class="border-b-2 border-black ${istHighlight ? 'bg-yellow-100' : ''} transition-colors">
+        <article data-eintrag-id="${eintrag.id}" data-status="${eintrag.status}" class="border-b-2 border-black ${istHighlight ? 'bg-yellow-100' : ''} transition-colors">
           <div class="py-4 cursor-pointer hover:bg-neutral-50 transition-colors" onclick="toggleErweitert(${eintrag.id})">
             <div class="flex flex-col sm:flex-row sm:items-start gap-3">
               <div class="flex-1">
@@ -824,7 +838,7 @@
         const statusClass = eintrag.status === 'geschlossen' ? 'red' : 'orange';
         const statusLabel = eintrag.status === 'geschlossen' ? 'Geschlossen' : 'Gefährdet';
         return `
-          <details class="mobile-entry" data-mobile-eintrag-id="${eintrag.id}" ${istErweitert ? 'open' : ''}>
+          <details class="mobile-entry" data-mobile-eintrag-id="${eintrag.id}" data-status="${eintrag.status}" ${istErweitert ? 'open' : ''}>
             <summary class="mobile-entry-card mobile-entry-summary">
               <div class="mobile-entry-head">
                 <div class="mobile-entry-copy">
