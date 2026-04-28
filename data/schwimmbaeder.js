@@ -561,5 +561,23 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 51.134644,
     "lon": 13.780754,
     "karte": "https://www.openstreetmap.org/?mlat=51.134644&mlon=13.780754#map=17/51.134644/13.780754"
+  },
+  {
+    "id": 49,
+    "name": "Naturbad Hallenberg",
+    "adresse": "Nuhnestraße 32, 59969 Hallenberg",
+    "bundesland": "Nordrhein-Westfalen",
+    "region": "Hochsauerlandkreis",
+    "status": "gefaehrdet",
+    "begruendung": "Die Sommersaison 2026 fällt aus. Eine umfassende Sanierung des Naturbads ist noch nicht entschieden; die Stadt hält sie bei aktuell rund 2,4 Mio. Euro Kosten nur mit Förderung für realistisch. Solange Finanzierung und Rettungsperspektive offen sind, bleibt der Fall im Monitor als gefährdet.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Radio Sauerland: Keine Freibadsaison in Hallenberg",
+      "url": "https://www.radiosauerland.de/artikel/keine-freibadsaison-in-hallenberg-2625068",
+      "datum": "2026-04-16"
+    },
+    "lat": 51.120497,
+    "lon": 8.615799,
+    "karte": "https://www.openstreetmap.org/?mlat=51.120497&mlon=8.615799#map=17/51.120497/8.615799"
   }
 ];

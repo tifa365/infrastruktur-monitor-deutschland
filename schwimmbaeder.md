@@ -41,6 +41,7 @@
 
 | Badname | Adresse | Begründung | Quelle |
 |---------|---------|------------|--------|
+| Naturbad Hallenberg | Nuhnestraße 32, 59969 Hallenberg | Die Sommersaison 2026 fällt aus; die Stadt hält die Sanierung für nur mit Förderung realistisch, die Zukunft des Bads bleibt offen | [Radio Sauerland](https://www.radiosauerland.de/artikel/keine-freibadsaison-in-hallenberg-2625068) |
 | Freibad Bad Iburg | Sebastian-Kneipp-Allee 40, 49186 Bad Iburg | Wiedereröffnung am 15.05.2026 geplant; Bürgerbad-gGmbH, breites ehrenamtliches Engagement sowie städtische Zuschüsse tragen den Betrieb; wegen fragiler Finanzierungsbasis weiter gefährdet | [NOZ](https://www.noz.de/lokales/bad-iburg/artikel/bad-iburger-freibad-soll-ohne-buergermeister-neu-eroeffnet-werden-50172116) |
 | Stadtbad Neuss | Niederwallstraße 3, 41460 Neuss | Für das stark sanierungsbedürftige Stadtbad läuft eine Förderbewerbung des Bundes über bis zu 8 Mio. Euro; Anfang 2026 soll über Modernisierung oder Schließung entschieden werden | [SPD Neuss](https://spd-neuss.de/2025/12/21/spd-neuss-setzt-sich-fuer-stadtbad-erhalt-ein/) |
 | Sport- und Freizeitbad Tatami (Schmölln) | Ronneburger Straße 65, 04626 Schmölln | Betrieb 2026 durch 800.000 Euro Landeshilfe vorerst gesichert; wegen hoher Betriebskosten und offener Finanzierung für die Folgejahre weiter gefährdet | [MDR](https://www.mdr.de/nachrichten/thueringen/ost-thueringen/altenburg/schmoelln-tatami-gerette-geld-finanzierung-100.html) |
