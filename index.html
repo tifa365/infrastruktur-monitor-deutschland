@@ -27,6 +27,12 @@
       --mobile-line: #181818;
     }
 
+    body {
+      background:
+        radial-gradient(circle at top right, rgba(240, 214, 73, 0.28), transparent 34%),
+        linear-gradient(180deg, #f6f2ea 0%, #efebe1 100%);
+    }
+
     @media (min-width: 1024px) {
       html {
         font-size: 90%;
@@ -83,12 +89,6 @@
     }
 
     @media (max-width: 640px) {
-      body {
-        background:
-          radial-gradient(circle at top right, rgba(240, 214, 73, 0.28), transparent 34%),
-          linear-gradient(180deg, #f6f2ea 0%, #efebe1 100%);
-      }
-
       .desktop-only {
         display: none !important;
       }
