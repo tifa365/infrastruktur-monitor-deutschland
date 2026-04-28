@@ -47,3 +47,7 @@ Use short, imperative commit subjects such as `Add Stadtroda entry` or `Switch m
 
 ## Data & Source Integrity
 Prefer municipal pages, operator sites, and credible local reporting. Do not add unsourced claims. If an address is incomplete, keep the wording explicit and still run geodata sync so every entry has OSM coordinates. For near-misses or temporary relief, prefer documenting the development in `status_history.md` over silently deleting or downgrading the entry.
+
+## Needs To Be Added Back
+- Re-add the `Korrektur oder Ergänzung? Wir freuen uns über Hinweise mit Quellenangabe.` callout.
+- Re-add the `Impressum` footer link where it was removed from the public pages.
