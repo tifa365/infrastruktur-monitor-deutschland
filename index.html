@@ -4,53 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infrastruktur-Monitor Deutschland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Special+Elite&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
-          }
-        }
-      }
-    }
-  </script>
   <style>
     @media (min-width: 1024px) {
       html {
         font-size: 90%;
       }
     }
+
+    .dot-wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dot-tip {
+      pointer-events: none;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background: #111;
+      color: #fff;
+      font-size: 11px;
+      padding: 3px 8px;
+      border: 1px solid #000;
+      opacity: 0;
+      transition: opacity 0s;
+      z-index: 50;
+    }
+
+    .dot-wrap:hover .dot-tip {
+      opacity: 1;
+    }
+
+    #map {
+      height: 680px;
+    }
+
+    @media (max-width: 640px) {
+      #map {
+        height: 420px;
+      }
+    }
+
+    .leaflet-popup-content-wrapper {
+      border-radius: 0;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .leaflet-popup-content {
+      margin: 10px 12px;
+    }
   </style>
 </head>
 <body class="min-h-screen bg-white">
 
-  <!-- Header -->
-  <header class="border-b-4 border-black">
-    <div class="max-w-4xl mx-auto px-6 py-6">
-      <div class="text-center">
-        <p class="text-xs uppercase tracking-widest mb-2">Recherche · Dokumentation · Transparenz</p>
-        <h1 class="font-serif text-4xl sm:text-5xl font-black leading-none">
-          Infrastruktur-Monitor
-        </h1>
-        <p class="font-serif text-4xl sm:text-5xl mt-1 italic leading-none">Deutschland</p>
-        <div class="w-24 h-1 bg-black mx-auto mt-4"></div>
-      </div>
+  <header class="max-w-4xl mx-auto px-6 pt-8">
+    <div class="text-center pb-8">
+      <p class="text-sm uppercase tracking-widest mb-3">Recherche · Dokumentation · Transparenz</p>
+      <h1 class="font-serif text-5xl sm:text-6xl font-black leading-none">
+        Infrastruktur-Monitor
+      </h1>
+      <p class="font-serif text-4xl sm:text-5xl mt-2 italic leading-none">Deutschland</p>
+      <div class="w-28 h-1 bg-black mx-auto mt-5"></div>
     </div>
-  </header>
-
-  <!-- Yellow Banner -->
-  <div class="bg-yellow-300 border-b-2 border-black">
-    <div class="max-w-4xl mx-auto px-6 py-3">
-      <p class="text-sm font-bold uppercase tracking-wider text-center">
+    <div class="bg-yellow-300 border-2 border-black px-5 py-2.5 text-center">
+      <p class="text-sm font-bold uppercase tracking-wider">
         Öffentliche Einrichtungen unter Spardruck
       </p>
     </div>
-  </div>
+  </header>
 
   <main class="max-w-4xl mx-auto px-6 py-8">
-    <!-- Einleitung -->
     <div class="mb-8">
       <p class="text-lg leading-relaxed">
         <span class="text-5xl font-serif font-bold float-left mr-2 leading-none">D</span>er Infrastruktur-Monitor startet mit einem Pilotdatensatz
@@ -59,14 +94,19 @@
       </p>
     </div>
 
-    <!-- Statistik -->
     <div class="mb-8">
       <div id="statistik" class="flex gap-0 border-2 border-black">
         <!-- Wird per JS gefüllt -->
       </div>
     </div>
 
-    <!-- Filter -->
+    <div class="mb-8">
+      <label class="block text-xs font-bold uppercase tracking-wider mb-2">Verlauf</label>
+      <div id="timeline" class="border-2 border-black py-4 px-2">
+        <!-- Wird per JS gefüllt -->
+      </div>
+    </div>
+
     <div class="border-y-2 border-black py-4 mb-8">
       <div class="flex flex-wrap items-end gap-6">
         <div class="flex-1 min-w-40">
@@ -93,12 +133,15 @@
       </div>
     </div>
 
-    <!-- Liste -->
     <div id="listContainer" class="border-t-2 border-black">
       <!-- Wird per JS gefüllt -->
     </div>
 
-    <!-- Quellenverzeichnis -->
+    <div class="mt-12">
+      <label class="block text-xs font-bold uppercase tracking-wider mb-2">Karte</label>
+      <div id="map" class="border-2 border-black"></div>
+    </div>
+
     <div class="mt-12 pt-6 border-t-2 border-black">
       <h2 class="font-bold uppercase tracking-wider text-sm mb-4">Quellenverzeichnis</h2>
       <div id="quellenverzeichnis" class="columns-1 sm:columns-2 gap-8 text-xs">
@@ -106,7 +149,6 @@
       </div>
     </div>
 
-    <!-- Hinweis -->
     <div class="mt-8 border-2 border-dashed border-black p-4 text-center">
       <p class="text-sm">
         <strong>Korrektur oder Ergänzung?</strong> Wir freuen uns über Hinweise mit Quellenangabe.
@@ -114,10 +156,9 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="bg-black text-white mt-12">
     <div id="methodik-footer" class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-      <div>Daten: lokale Medien & Kommunen</div>
+      <div>Daten: lokale Medien &amp; Kommunen</div>
       <div><a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">Lizenz: CC BY 4.0</a></div>
       <div><a href="bestand.html" class="underline hover:no-underline">Bestand &amp; Methodik</a></div>
       <div><a href="impressum.html" class="underline hover:no-underline">Impressum</a></div>
@@ -127,27 +168,32 @@
 
   <script src="data/meta.js"></script>
   <script src="data/schwimmbaeder.js"></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
   <script>
     const APP_META = window.APP_META || {};
     const SCHWIMMBAEDER_DATEN = window.SCHWIMMBAEDER_DATEN || [];
 
-    // =============================================================================
-    // STATE
-    // =============================================================================
-
     let erweitertIds = new Set();
-    let filter = { status: '', bundesland: '', suche: '' };
+    let filter = { status: '', bundesland: '', suche: '', jahr: '' };
+    let highlightId = null;
 
-    // =============================================================================
-    // RENDER-FUNKTIONEN
-    // =============================================================================
+    let mapInstance = null;
+    let entryLayer = null;
+    let locationMarker = null;
+    let markersById = new Map();
+    let hasFitMap = false;
 
     function filterDaten() {
       const statusReihenfolge = { gefaehrdet: 0, geschlossen: 1 };
 
-      return SCHWIMMBAEDER_DATEN.filter(eintrag => {
+      return SCHWIMMBAEDER_DATEN.filter((eintrag) => {
         if (filter.status && eintrag.status !== filter.status) return false;
         if (filter.bundesland && eintrag.bundesland !== filter.bundesland) return false;
+        if (filter.jahr && String(eintrag.zeitraum) !== String(filter.jahr)) return false;
         if (filter.suche) {
           const suchbegriff = filter.suche.toLowerCase();
           const durchsuchbar = `${eintrag.name} ${eintrag.adresse} ${eintrag.region}`.toLowerCase();
@@ -165,8 +211,8 @@
 
     function renderStatistik() {
       const gesamt = SCHWIMMBAEDER_DATEN.length;
-      const geschlossen = SCHWIMMBAEDER_DATEN.filter(d => d.status === 'geschlossen').length;
-      const gefaehrdet = SCHWIMMBAEDER_DATEN.filter(d => d.status === 'gefaehrdet').length;
+      const geschlossen = SCHWIMMBAEDER_DATEN.filter((d) => d.status === 'geschlossen').length;
+      const gefaehrdet = SCHWIMMBAEDER_DATEN.filter((d) => d.status === 'gefaehrdet').length;
 
       document.getElementById('statistik').innerHTML = `
         <div class="flex-1 p-4 text-center border-r-2 border-black cursor-pointer hover:bg-neutral-100 transition-colors" onclick="setStatusFilter('')">
@@ -185,7 +231,7 @@
     }
 
     function formatGermanDate(value) {
-      if (!value) return "–";
+      if (!value) return '–';
       const parsed = new Date(`${value}T00:00:00`);
       if (Number.isNaN(parsed.getTime())) return value;
       return new Intl.DateTimeFormat('de-DE', {
@@ -212,15 +258,101 @@
       document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth' });
     }
 
+    function setJahrFilter(jahr) {
+      filter.jahr = filter.jahr === String(jahr) ? '' : String(jahr);
+      render();
+      document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function focusEintrag(id) {
+      erweitertIds.add(id);
+      highlightId = id;
+      render();
+      focusMapEntry(id);
+      requestAnimationFrame(() => {
+        window.setTimeout(() => {
+          highlightId = null;
+          render();
+        }, 1800);
+      });
+    }
+
+    function renderTimeline() {
+      const container = document.getElementById('timeline');
+      const minJahr = 2020;
+      const maxJahr = Math.max(
+        ...SCHWIMMBAEDER_DATEN.map((d) => Number(d.zeitraum)).filter((n) => !Number.isNaN(n)),
+        new Date().getFullYear()
+      );
+      const jahre = [];
+      for (let y = minJahr; y <= maxJahr; y += 1) jahre.push(y);
+
+      const buckets = jahre.map((jahr) => {
+        const eintraege = SCHWIMMBAEDER_DATEN
+          .filter((d) => String(d.zeitraum) === String(jahr))
+          .sort((a, b) => {
+            if (a.status !== b.status) return a.status === 'geschlossen' ? -1 : 1;
+            return a.name.localeCompare(b.name, 'de');
+          });
+        return { jahr, eintraege };
+      });
+      const maxCount = Math.max(1, ...buckets.map((bucket) => bucket.eintraege.length));
+
+      const dot = 16;
+      const gap = 4;
+      const cols = Math.max(2, Math.ceil(Math.sqrt(maxCount)));
+      const maxRows = Math.ceil(maxCount / cols);
+      const stackHeight = maxRows * dot + (maxRows - 1) * gap;
+
+      container.innerHTML = `
+        <div class="flex items-stretch justify-between gap-2 pb-1">
+          ${buckets.map((bucket) => {
+            const isActive = filter.jahr === String(bucket.jahr);
+            const isDimmed = filter.jahr && !isActive;
+            const total = bucket.eintraege.length;
+            const rows = Math.max(1, Math.ceil(total / cols));
+            const stackInner = rows * dot + (rows - 1) * gap;
+            const isLast = bucket.jahr === buckets[buckets.length - 1].jahr;
+            return `
+              <div class="flex-1 flex flex-col items-center min-w-0 transition-opacity ${isDimmed ? 'opacity-40' : ''} ${isLast ? '' : 'border-r border-neutral-400'}" style="padding: 0 4px;">
+                <div class="flex flex-col items-center gap-2 mt-auto w-full">
+                  <div class="relative w-full" style="height:${stackHeight}px;">
+                    <div class="absolute left-0 right-0 bottom-0" style="height:${stackInner}px; display:grid; grid-template-columns: repeat(${cols}, ${dot}px); gap:${gap}px; justify-content:center; align-content:end;">
+                      ${bucket.eintraege.map((eintrag) => {
+                        const colorClass = eintrag.status === 'geschlossen'
+                          ? 'bg-red-600 hover:bg-red-700'
+                          : 'bg-orange-500 hover:bg-orange-600';
+                        const safeName = `${eintrag.name} · ${eintrag.region}`.replace(/"/g, '&quot;');
+                        return `<span class="dot-wrap"><button type="button" onclick="focusEintrag(${eintrag.id})" aria-label="${safeName}" class="${colorClass} border border-black rounded-full transition-transform hover:scale-125 hover:z-10 relative cursor-pointer" style="width:${dot}px; height:${dot}px; display:block;"></button><span class="dot-tip">${safeName}</span></span>`;
+                      }).join('')}
+                    </div>
+                  </div>
+                  <button type="button" onclick="setJahrFilter(${bucket.jahr})" aria-pressed="${isActive}" class="text-xs font-bold tabular-nums px-2 py-0.5 mt-1 transition-colors w-full ${isActive ? 'bg-black text-white' : 'hover:bg-neutral-100'}" style="border-top: 2px solid #000;">${bucket.jahr}</button>
+                </div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 pt-3 border-t border-dashed border-black text-[11px] uppercase tracking-wider">
+          <span class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-full bg-red-600 border border-black"></span> Geschlossen</span>
+          <span class="flex items-center gap-2"><span class="inline-block w-3 h-3 rounded-full bg-orange-500 border border-black"></span> Gefährdet</span>
+          ${filter.jahr
+            ? `<span class="ml-auto inline-flex items-center gap-2 bg-yellow-300 border border-black px-2 py-0.5"><span class="font-bold">Filter: ${filter.jahr}</span><button onclick="setJahrFilter('${filter.jahr}')" class="underline hover:no-underline">×</button></span>`
+            : `<span class="ml-auto text-neutral-500 normal-case tracking-normal">${SCHWIMMBAEDER_DATEN.length} Fälle gesamt</span>`}
+        </div>
+      `;
+    }
+
     function renderEintrag(eintrag, index) {
       const istErweitert = erweitertIds.has(eintrag.id);
+      const istHighlight = highlightId === eintrag.id;
       const statusClass = eintrag.status === 'geschlossen'
         ? 'bg-red-600 text-white'
         : 'bg-orange-500 text-white';
       const statusLabel = eintrag.status === 'geschlossen' ? 'Geschlossen' : 'Gefährdet';
 
       return `
-        <article class="border-b-2 border-black">
+        <article data-eintrag-id="${eintrag.id}" class="border-b-2 border-black ${istHighlight ? 'bg-yellow-100' : ''} transition-colors">
           <div class="py-4 cursor-pointer hover:bg-neutral-50 transition-colors" onclick="toggleErweitert(${eintrag.id})">
             <div class="flex flex-col sm:flex-row sm:items-start gap-3">
               <div class="flex-1">
@@ -286,37 +418,139 @@
     }
 
     function renderBundeslandFilter() {
-      const bundeslaender = [...new Set(SCHWIMMBAEDER_DATEN.map(d => d.bundesland))].sort();
+      const bundeslaender = [...new Set(SCHWIMMBAEDER_DATEN.map((d) => d.bundesland))].sort();
       const select = document.getElementById('bundeslandFilter');
-      bundeslaender.forEach(bl => {
+      bundeslaender.forEach((bundesland) => {
         const option = document.createElement('option');
-        option.value = bl;
-        option.textContent = bl;
+        option.value = bundesland;
+        option.textContent = bundesland;
         select.appendChild(option);
       });
     }
 
     function updateResetButton() {
       const resetBtn = document.getElementById('resetFilter');
-      if (filter.status || filter.bundesland || filter.suche) {
+      if (filter.status || filter.bundesland || filter.suche || filter.jahr) {
         resetBtn.classList.remove('hidden');
       } else {
         resetBtn.classList.add('hidden');
       }
     }
 
+    function makePopupHtml(eintrag) {
+      const label = eintrag.status === 'geschlossen' ? 'Geschlossen' : 'Gefährdet';
+      const color = eintrag.status === 'geschlossen' ? '#dc2626' : '#f97316';
+      return `
+        <div style="font-family: Georgia, serif; min-width: 180px;">
+          <div style="font-weight: 900; font-size: 13px; line-height: 1.2; margin-bottom: 4px;">${eintrag.name}</div>
+          <div style="font-size: 11px; color: #666; margin-bottom: 6px;">${eintrag.region} · ${eintrag.bundesland}</div>
+          <div style="display: inline-block; background: ${color}; color: #fff; font-family: 'Special Elite', monospace; font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; padding: 2px 6px;">${label} · ${eintrag.zeitraum}</div>
+        </div>
+      `;
+    }
+
+    function makeIcon(status) {
+      const color = status === 'geschlossen' ? '#dc2626' : '#f97316';
+      return L.divIcon({
+        className: '',
+        html: `<div style="width:12px;height:12px;border-radius:50%;background:${color};border:1.5px solid rgba(0,0,0,0.6);"></div>`,
+        iconSize: [12, 12],
+        iconAnchor: [6, 6],
+        popupAnchor: [0, -8],
+      });
+    }
+
+    function initialiseMap() {
+      if (!window.L) {
+        document.getElementById('map').innerHTML = '<div class="h-full flex items-center justify-center text-sm text-neutral-500">Karte konnte nicht geladen werden.</div>';
+        return;
+      }
+
+      mapInstance = L.map('map', { zoomControl: true, scrollWheelZoom: false });
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+        maxZoom: 18,
+      }).addTo(mapInstance);
+
+      entryLayer = L.layerGroup().addTo(mapInstance);
+      mapInstance.setView([51.1657, 10.4515], 6);
+
+      const LocControl = L.Control.extend({
+        options: { position: 'topright' },
+        onAdd() {
+          const btn = L.DomUtil.create('button', '');
+          btn.title = 'Meinen Standort anzeigen';
+          btn.type = 'button';
+          btn.style.cssText = 'width:32px;height:32px;background:#fff;border:2px solid #1a1a1a;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:2px 2px 0 #1a1a1a;padding:0;';
+          btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>';
+
+          L.DomEvent.on(btn, 'click', (event) => {
+            L.DomEvent.stopPropagation(event);
+            if (!navigator.geolocation) return;
+
+            navigator.geolocation.getCurrentPosition((position) => {
+              const latlng = [position.coords.latitude, position.coords.longitude];
+              if (locationMarker) locationMarker.remove();
+              locationMarker = L.circleMarker(latlng, {
+                radius: 8,
+                fillColor: '#2563eb',
+                color: '#fff',
+                weight: 2,
+                fillOpacity: 1
+              }).addTo(mapInstance).bindPopup('<div style="font-family: Georgia, serif; font-size: 12px;">Mein Standort</div>').openPopup();
+              mapInstance.setView(latlng, 10);
+            }, () => {
+              window.alert('Standort konnte nicht ermittelt werden.');
+            });
+          });
+
+          return btn;
+        }
+      });
+
+      new LocControl().addTo(mapInstance);
+    }
+
+    function renderMap(daten) {
+      if (!mapInstance || !entryLayer) return;
+
+      entryLayer.clearLayers();
+      markersById = new Map();
+
+      daten.forEach((eintrag) => {
+        if (!eintrag.lat || !eintrag.lon) return;
+        const marker = L.marker([eintrag.lat, eintrag.lon], { icon: makeIcon(eintrag.status) })
+          .bindPopup(makePopupHtml(eintrag));
+        marker.addTo(entryLayer);
+        markersById.set(eintrag.id, marker);
+      });
+
+      if (!hasFitMap && markersById.size) {
+        const bounds = L.featureGroup([...markersById.values()]).getBounds();
+        mapInstance.fitBounds(bounds.pad(0.05));
+        hasFitMap = true;
+      }
+    }
+
+    function focusMapEntry(id) {
+      if (!mapInstance) return;
+      const marker = markersById.get(id);
+      if (!marker) return;
+      mapInstance.flyTo(marker.getLatLng(), Math.max(mapInstance.getZoom(), 8), { duration: 0.6 });
+      marker.openPopup();
+    }
+
     function render() {
       const gefilterteDaten = filterDaten();
       renderMeta();
       renderStatistik();
+      renderTimeline();
       renderListe(gefilterteDaten);
       renderQuellenverzeichnis(gefilterteDaten);
+      renderMap(gefilterteDaten);
       updateResetButton();
     }
-
-    // =============================================================================
-    // EVENT HANDLERS
-    // =============================================================================
 
     function toggleErweitert(id) {
       if (erweitertIds.has(id)) {
@@ -335,16 +569,12 @@
     }
 
     function resetFilters() {
-      filter = { status: '', bundesland: '', suche: '' };
+      filter = { status: '', bundesland: '', suche: '', jahr: '' };
       document.getElementById('statusFilter').value = '';
       document.getElementById('bundeslandFilter').value = '';
       document.getElementById('searchInput').value = '';
       render();
     }
-
-    // =============================================================================
-    // INITIALISIERUNG
-    // =============================================================================
 
     document.getElementById('statusFilter').addEventListener('change', handleFilterChange);
     document.getElementById('bundeslandFilter').addEventListener('change', handleFilterChange);
@@ -352,6 +582,7 @@
     document.getElementById('resetFilter').addEventListener('click', resetFilters);
 
     renderBundeslandFilter();
+    initialiseMap();
     render();
   </script>
 </body>
