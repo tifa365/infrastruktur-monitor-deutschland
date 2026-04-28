@@ -10,10 +10,31 @@
   <link rel="stylesheet" href="assets/vendor/tailwind.generated.css">
   <link rel="stylesheet" href="assets/vendor/leaflet.css">
   <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --mobile-bg: #f2efe7;
+      --mobile-ink: #171717;
+      --mobile-muted: #7f766d;
+      --mobile-yellow: #f0d649;
+      --mobile-red: #d7342a;
+      --mobile-orange: #ef7b1d;
+      --mobile-card: #fffdf9;
+      --mobile-line: #181818;
+    }
+
     @media (min-width: 1024px) {
       html {
         font-size: 90%;
       }
+    }
+
+    .mobile-only {
+      display: none;
     }
 
     .dot-wrap {
@@ -60,11 +81,369 @@
     .leaflet-popup-content {
       margin: 10px 12px;
     }
+
+    @media (max-width: 640px) {
+      body {
+        background:
+          radial-gradient(circle at top right, rgba(240, 214, 73, 0.28), transparent 34%),
+          linear-gradient(180deg, #f6f2ea 0%, #efebe1 100%);
+      }
+
+      .desktop-only {
+        display: none !important;
+      }
+
+      .mobile-only {
+        display: block;
+      }
+
+      #mainContent {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 430px;
+        padding: 0 14px 26px;
+      }
+
+      #mapSection {
+        margin-top: 18px;
+      }
+
+      #listContainer {
+        border-top: 0 !important;
+      }
+
+      .mobile-hero {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+        padding: 14px 14px 0;
+      }
+
+      .mobile-hero-card {
+        border: 2px solid var(--mobile-line);
+        background: var(--mobile-card);
+        padding: 16px 16px 18px;
+        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.07);
+      }
+
+      .mobile-hero-mark {
+        margin-bottom: 12px;
+        color: var(--mobile-muted);
+        font: 700 10px/1.2 Arial, sans-serif;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .mobile-hero-title {
+        margin: 0;
+        font-family: "DM Serif Display", Georgia, serif;
+        font-size: 39px;
+        line-height: 0.94;
+      }
+
+      .mobile-hero-title span {
+        display: block;
+        margin-top: 3px;
+        font-style: italic;
+      }
+
+      .mobile-strip {
+        margin-top: 14px;
+        border: 2px solid var(--mobile-line);
+        background: var(--mobile-yellow);
+        padding: 10px 12px;
+        text-align: center;
+        font: 700 11px/1.2 Arial, sans-serif;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .mobile-lede {
+        margin-top: 14px;
+        font: 400 16px/1.52 Georgia, serif;
+        color: var(--mobile-ink);
+      }
+
+      .mobile-signals {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .mobile-signal {
+        border: 2px solid var(--mobile-line);
+        padding: 14px 12px;
+        color: #fff;
+      }
+
+      .mobile-signal strong {
+        display: block;
+        margin-bottom: 6px;
+        font-family: "DM Serif Display", Georgia, serif;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      .mobile-signal span {
+        font: 700 11px/1.2 Arial, sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .mobile-signal.red {
+        background: var(--mobile-red);
+      }
+
+      .mobile-signal.orange {
+        background: var(--mobile-orange);
+      }
+
+      .mobile-section {
+        margin-top: 18px;
+      }
+
+      .mobile-section-title {
+        margin-bottom: 9px;
+        font: 700 11px/1.2 Arial, sans-serif;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .mobile-filters {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 2px;
+      }
+
+      .mobile-chip {
+        flex: 0 0 auto;
+        border: 2px solid var(--mobile-line);
+        background: var(--mobile-card);
+        padding: 10px 12px;
+        color: var(--mobile-ink);
+        font: 700 12px/1 Arial, sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .mobile-chip.active {
+        background: var(--mobile-ink);
+        color: #fff;
+      }
+
+      .mobile-entry {
+        margin: 0 0 10px;
+      }
+
+      .mobile-entry-card {
+        border: 2px solid var(--mobile-line);
+        background: var(--mobile-card);
+        padding: 14px 14px 12px;
+      }
+
+      .mobile-entry-card::-webkit-details-marker,
+      .mobile-entry-card summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .mobile-entry-summary {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      .mobile-entry-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .mobile-entry-copy {
+        min-width: 0;
+      }
+
+      .mobile-entry-title {
+        margin: 0;
+        font-family: "DM Serif Display", Georgia, serif;
+        font-size: 24px;
+        line-height: 1.02;
+        overflow-wrap: anywhere;
+      }
+
+      .mobile-entry-region {
+        display: block;
+        margin-top: 4px;
+        color: var(--mobile-muted);
+        font: italic 14px/1.35 Georgia, serif;
+      }
+
+      .mobile-pill {
+        padding: 7px 9px;
+        color: #fff;
+        font: 700 10px/1 Arial, sans-serif;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .mobile-pill.red {
+        background: var(--mobile-red);
+      }
+
+      .mobile-pill.orange {
+        background: var(--mobile-orange);
+      }
+
+      .mobile-entry-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        padding-top: 10px;
+        border-top: 1px solid #bcb4a7;
+        color: var(--mobile-muted);
+        font-size: 13px;
+      }
+
+      .mobile-entry-address {
+        color: inherit;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      .mobile-entry-year {
+        color: var(--mobile-ink);
+        font: 700 17px/1 Arial, sans-serif;
+      }
+
+      .mobile-entry-toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px dashed #bcb4a7;
+        color: var(--mobile-muted);
+        font: 700 11px/1.2 Arial, sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .mobile-toggle-plus {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border: 2px solid var(--mobile-line);
+        background: #fff;
+        color: var(--mobile-ink);
+        font: 700 18px/1 Arial, sans-serif;
+        flex: 0 0 auto;
+      }
+
+      .mobile-toggle-plus::before {
+        content: "+";
+      }
+
+      details[open] .mobile-toggle-plus::before {
+        content: "−";
+      }
+
+      .mobile-entry-more {
+        border: 2px solid var(--mobile-line);
+        border-top: 0;
+        background: var(--mobile-card);
+        padding: 14px;
+      }
+
+      .mobile-entry-more h4 {
+        margin: 0 0 6px;
+        font: 700 11px/1.2 Arial, sans-serif;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .mobile-entry-more p {
+        margin: 0 0 12px;
+        font: 400 14px/1.48 Georgia, serif;
+      }
+
+      .mobile-entry-more p:last-child {
+        margin-bottom: 0;
+      }
+
+      .mobile-entry-more a {
+        color: inherit;
+      }
+
+      .mobile-empty {
+        border: 2px solid var(--mobile-line);
+        background: var(--mobile-card);
+        padding: 16px 14px;
+        color: var(--mobile-muted);
+        font: italic 15px/1.45 Georgia, serif;
+      }
+
+      .mobile-dock {
+        position: sticky;
+        bottom: 12px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        margin-top: 18px;
+        padding: 8px;
+        border: 2px solid var(--mobile-line);
+        background: rgba(255, 253, 249, 0.95);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 20;
+      }
+
+      .mobile-dock button {
+        border: 2px solid var(--mobile-line);
+        background: #fff;
+        padding: 10px 8px;
+        text-align: center;
+        font: 700 11px/1 Arial, sans-serif;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .mobile-dock button.active {
+        background: var(--mobile-ink);
+        color: #fff;
+      }
+
+      .mobile-panel-hidden {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 <body class="min-h-screen bg-white">
 
-  <header class="max-w-4xl mx-auto px-6 pt-8">
+  <section class="mobile-only mobile-hero">
+    <div class="mobile-hero-card">
+      <div class="mobile-hero-mark">IFM · Mobile Ansicht</div>
+      <h1 class="mobile-hero-title">Infrastruktur-<span>Monitor</span></h1>
+      <div class="mobile-strip">Öffentliche Einrichtungen unter Spardruck</div>
+      <div id="mobileLede" class="mobile-lede">
+        Diese mobile Ansicht arbeitet mit den echten IFM-Daten.
+      </div>
+      <div id="mobileStatistik" class="mobile-signals">
+        <!-- Wird per JS gefüllt -->
+      </div>
+    </div>
+  </section>
+
+  <header class="desktop-only max-w-4xl mx-auto px-6 pt-8">
     <div class="text-center pb-8">
       <p class="text-sm uppercase tracking-widest mb-3">Recherche · Dokumentation · Transparenz</p>
       <h1 class="font-serif text-5xl sm:text-6xl font-black leading-none">
@@ -80,8 +459,8 @@
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-8">
-    <div class="mb-8">
+  <main id="mainContent" class="max-w-4xl mx-auto px-6 py-8">
+    <div class="desktop-only mb-8">
       <p class="text-lg leading-relaxed">
         <span class="text-5xl font-serif font-bold float-left mr-2 leading-none">D</span>er Infrastruktur-Monitor startet mit einem Pilotdatensatz
         zu öffentlichen Schwimmbädern. Erfasst werden Schließungen und Gefährdungen aus finanziellen Gründen, mit klarem Schwerpunkt auf Entwicklungen
@@ -89,20 +468,20 @@
       </p>
     </div>
 
-    <div class="mb-8">
+    <div class="desktop-only mb-8">
       <div id="statistik" class="flex gap-0 border-2 border-black">
         <!-- Wird per JS gefüllt -->
       </div>
     </div>
 
-    <div class="mb-8">
+    <div class="desktop-only mb-8">
       <label class="block text-xs font-bold uppercase tracking-wider mb-2">Verlauf</label>
       <div id="timeline" class="border-2 border-black py-4 px-2">
         <!-- Wird per JS gefüllt -->
       </div>
     </div>
 
-    <div class="border-y-2 border-black py-4 mb-8">
+    <div class="desktop-only border-y-2 border-black py-4 mb-8">
       <div class="flex flex-wrap items-end gap-6">
         <div class="flex-1 min-w-40">
           <label class="block text-xs font-bold uppercase tracking-wider mb-2">Status</label>
@@ -128,20 +507,37 @@
       </div>
     </div>
 
-    <div id="listContainer" class="border-t-2 border-black">
-      <!-- Wird per JS gefüllt -->
-    </div>
+    <section class="mobile-only mobile-section">
+      <div class="mobile-section-title">Filter</div>
+      <div id="mobileFilters" class="mobile-filters">
+        <button type="button" class="mobile-chip active" data-mobile-status="">Alle</button>
+        <button type="button" class="mobile-chip" data-mobile-status="gefaehrdet">Gefährdet</button>
+        <button type="button" class="mobile-chip" data-mobile-status="geschlossen">Geschlossen</button>
+      </div>
+    </section>
 
-    <div class="mt-12">
-      <label class="block text-xs font-bold uppercase tracking-wider mb-2">Karte</label>
+    <section id="listSection" class="mobile-section">
+      <div class="mobile-only mobile-section-title">Fälle</div>
+      <div id="listContainer" class="border-t-2 border-black">
+      <!-- Wird per JS gefüllt -->
+      </div>
+    </section>
+
+    <div id="mapSection" class="mt-12">
+      <label class="desktop-only block text-xs font-bold uppercase tracking-wider mb-2">Karte</label>
       <div id="map" class="border-2 border-black"></div>
     </div>
 
-    <div class="mt-12 pt-6 border-t-2 border-black">
+    <div class="desktop-only mt-12 pt-6 border-t-2 border-black">
       <h2 class="font-bold uppercase tracking-wider text-sm mb-4">Quellenverzeichnis</h2>
       <div id="quellenverzeichnis" class="columns-1 sm:columns-2 gap-8 text-xs">
         <!-- Wird per JS gefüllt -->
       </div>
+    </div>
+
+    <div class="mobile-only mobile-dock" id="mobileDock">
+      <button type="button" class="active" data-mobile-panel="list">Liste</button>
+      <button type="button" data-mobile-panel="map">Karte</button>
     </div>
 
   </main>
@@ -165,6 +561,7 @@
     let erweitertIds = new Set();
     let filter = { status: '', bundesland: '', suche: '', jahr: '' };
     let highlightId = null;
+    let mobilePanel = 'list';
 
     let mapInstance = null;
     let entryLayer = null;
@@ -213,6 +610,17 @@
           <div class="text-xs uppercase tracking-wider mt-1">Gefährdet</div>
         </div>
       `;
+
+      document.getElementById('mobileStatistik').innerHTML = `
+        <button type="button" class="mobile-signal red text-left" onclick="setStatusFilter('geschlossen')">
+          <strong>${geschlossen}</strong>
+          <span>Geschlossen</span>
+        </button>
+        <button type="button" class="mobile-signal orange text-left" onclick="setStatusFilter('gefaehrdet')">
+          <strong>${gefaehrdet}</strong>
+          <span>Gefährdet</span>
+        </button>
+      `;
     }
 
     function formatGermanDate(value) {
@@ -228,6 +636,10 @@
 
     function renderMeta() {
       document.getElementById('letztesUpdate').textContent = `Letztes Update: ${formatGermanDate(APP_META.lastUpdated)}`;
+      const mobileLede = document.getElementById('mobileLede');
+      if (mobileLede && APP_META.lastUpdated) {
+        mobileLede.textContent = `Diese mobile Ansicht arbeitet mit den echten IFM-Daten. Letztes Update: ${formatGermanDate(APP_META.lastUpdated)}.`;
+      }
     }
 
     function formatQuelle(eintrag) {
@@ -378,9 +790,72 @@
       `;
     }
 
-    function renderListe(daten) {
+    function renderMobileListe(daten) {
       const container = document.getElementById('listContainer');
 
+      if (daten.length === 0) {
+        container.innerHTML = '<div class="mobile-empty">Keine Einträge gefunden.</div>';
+        return;
+      }
+
+      container.innerHTML = daten.map((eintrag, index) => {
+        const istErweitert = erweitertIds.has(eintrag.id);
+        const statusClass = eintrag.status === 'geschlossen' ? 'red' : 'orange';
+        const statusLabel = eintrag.status === 'geschlossen' ? 'Geschlossen' : 'Gefährdet';
+        return `
+          <details class="mobile-entry" data-mobile-eintrag-id="${eintrag.id}" ${istErweitert ? 'open' : ''}>
+            <summary class="mobile-entry-card mobile-entry-summary">
+              <div class="mobile-entry-head">
+                <div class="mobile-entry-copy">
+                  <h3 class="mobile-entry-title">${eintrag.name}</h3>
+                  <span class="mobile-entry-region">${eintrag.region} · ${eintrag.bundesland}</span>
+                </div>
+                <span class="mobile-pill ${statusClass}">${statusLabel}</span>
+              </div>
+              <div class="mobile-entry-meta">
+                <a class="mobile-entry-address" href="${eintrag.karte}" target="_blank" rel="noopener noreferrer">${eintrag.adresse}</a>
+                <strong class="mobile-entry-year">${eintrag.zeitraum}</strong>
+              </div>
+              <div class="mobile-entry-toggle">
+                <span>Mehr Informationen</span>
+                <span class="mobile-toggle-plus"></span>
+              </div>
+            </summary>
+            <div class="mobile-entry-more">
+              <h4>Begründung</h4>
+              <p>${eintrag.begruendung}</p>
+              <h4>Quelle</h4>
+              <p><a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer"><sup>${index + 1}</sup> ${formatQuelle(eintrag)}</a></p>
+            </div>
+          </details>
+        `;
+      }).join('');
+
+      container.querySelectorAll('.mobile-entry-address').forEach((link) => {
+        link.addEventListener('click', (event) => {
+          event.stopPropagation();
+        });
+      });
+
+      container.querySelectorAll('.mobile-entry').forEach((details) => {
+        details.addEventListener('toggle', () => {
+          const id = Number(details.dataset.mobileEintragId);
+          if (details.open) {
+            erweitertIds.add(id);
+          } else {
+            erweitertIds.delete(id);
+          }
+        });
+      });
+    }
+
+    function renderListe(daten) {
+      if (window.matchMedia('(max-width: 640px)').matches) {
+        renderMobileListe(daten);
+        return;
+      }
+
+      const container = document.getElementById('listContainer');
       if (daten.length === 0) {
         container.innerHTML = `
           <div class="py-12 text-center">
@@ -419,6 +894,43 @@
         resetBtn.classList.remove('hidden');
       } else {
         resetBtn.classList.add('hidden');
+      }
+    }
+
+    function updateMobileFilterButtons() {
+      document.querySelectorAll('[data-mobile-status]').forEach((button) => {
+        const isActive = button.dataset.mobileStatus === filter.status;
+        button.classList.toggle('active', isActive);
+      });
+    }
+
+    function updateMobilePanel() {
+      const listSection = document.getElementById('listSection');
+      const mapSection = document.getElementById('mapSection');
+      const dockButtons = document.querySelectorAll('[data-mobile-panel]');
+
+      dockButtons.forEach((button) => {
+        button.classList.toggle('active', button.dataset.mobilePanel === mobilePanel);
+      });
+
+      if (!window.matchMedia('(max-width: 640px)').matches) {
+        listSection.classList.remove('mobile-panel-hidden');
+        mapSection.classList.remove('mobile-panel-hidden');
+        return;
+      }
+
+      listSection.classList.toggle('mobile-panel-hidden', mobilePanel !== 'list');
+      mapSection.classList.toggle('mobile-panel-hidden', mobilePanel !== 'map');
+
+      if (mobilePanel === 'map' && mapInstance) {
+        window.setTimeout(() => {
+          mapInstance.invalidateSize();
+          if (markersById.size && !hasFitMap) {
+            const bounds = L.featureGroup([...markersById.values()]).getBounds();
+            mapInstance.fitBounds(bounds.pad(0.05));
+            hasFitMap = true;
+          }
+        }, 50);
       }
     }
 
@@ -535,6 +1047,8 @@
       renderQuellenverzeichnis(gefilterteDaten);
       renderMap(gefilterteDaten);
       updateResetButton();
+      updateMobileFilterButtons();
+      updateMobilePanel();
     }
 
     function toggleErweitert(id) {
@@ -565,6 +1079,21 @@
     document.getElementById('bundeslandFilter').addEventListener('change', handleFilterChange);
     document.getElementById('searchInput').addEventListener('input', handleFilterChange);
     document.getElementById('resetFilter').addEventListener('click', resetFilters);
+    document.getElementById('mobileFilters').addEventListener('click', (event) => {
+      const button = event.target.closest('[data-mobile-status]');
+      if (!button) return;
+      filter.status = button.dataset.mobileStatus;
+      render();
+    });
+    document.getElementById('mobileDock').addEventListener('click', (event) => {
+      const button = event.target.closest('[data-mobile-panel]');
+      if (!button) return;
+      mobilePanel = button.dataset.mobilePanel;
+      updateMobilePanel();
+    });
+    window.addEventListener('resize', () => {
+      render();
+    });
 
     renderBundeslandFilter();
     initialiseMap();
