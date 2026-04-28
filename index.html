@@ -192,9 +192,9 @@
       }).sort((a, b) => {
         const statusDiff = statusReihenfolge[a.status] - statusReihenfolge[b.status];
         if (statusDiff !== 0) return statusDiff;
-        const yearDiff = Number(b.zeitraum) - Number(a.zeitraum);
-        if (yearDiff !== 0) return yearDiff;
-        return b.id - a.id;
+        const nameDiff = a.name.localeCompare(b.name, 'de');
+        if (nameDiff !== 0) return nameDiff;
+        return a.id - b.id;
       });
     }
 
