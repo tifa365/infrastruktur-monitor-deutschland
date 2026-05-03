@@ -37,6 +37,7 @@
 | Hallenbad Schönwald | Hallenbad Schönwald, 78141 Schönwald im Schwarzwald | 2023 dauerhaft geschlossen; laufender Betrieb und Neuinvestition finanziell nicht tragbar | [Gemeinde Schönwald](https://www.schoenwald.net/hallenbad-schoenwald-ab-sofort-dauerhaft-geschlossen/) |
 | Hallenbad Langenzenn | Hallenbad Langenzenn, 90579 Langenzenn | Dauerhafte Schließung zum 31.07.2025; weder Sanierung noch Neubau finanzierbar | [Stadtwerke Langenzenn](https://www.stadtwerke-langenzenn.de/wir-sind-da/aktuelles/2447/schliessung-hallenbad) |
 | Badeweiher Marl | Paul-Baumann-Straße, 45772 Marl | Evonik bestätigt 2026 die Schließung; der Unterhalt koste das Unternehmen jährlich einen sechsstelligen Betrag und sei nicht mehr tragbar | [Radio Vest](https://www.radiovest.de/artikel/badeweiher-in-marl-schliesst-nach-74-jahren-2634373) |
+| hanseWasser Hallenbad | Franz-Böhmert-Straße 11, 28205 Bremen | Schließung zum 01.07.2026 angekündigt; zugleich beschreibt der Senat eine strukturelle Unterdeckung, hohe Betriebs- und Instandhaltungskosten sowie hohen Sanierungsbedarf | [WESER-KURIER](https://www.weser-kurier.de/bremen/politik/hansewasser-bad-bremen-schwimmvereine-warnen-vor-austrittswelle-doc85mph90pkdhf11ym6w5) |
 
 ## 🟡 Gefährdet
 

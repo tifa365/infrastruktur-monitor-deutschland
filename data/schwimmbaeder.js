@@ -597,5 +597,23 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 51.67697,
     "lon": 7.096081,
     "karte": "https://www.openstreetmap.org/?mlat=51.676970&mlon=7.096081#map=17/51.676970/7.096081"
+  },
+  {
+    "id": 51,
+    "name": "hanseWasser Hallenbad",
+    "adresse": "Franz-Böhmert-Straße 11, 28205 Bremen",
+    "bundesland": "Bremen",
+    "region": "Bremen Östliche Vorstadt",
+    "status": "geschlossen",
+    "begruendung": "Laut Weser-Kurier soll das Bad zum 01.07.2026 schließen. Hintergrund ist nicht nur der Verlust von Vereinswasserflächen, sondern auch die vom Senat beschriebene strukturelle Unterdeckung, hohe Instandhaltungs- und Energiekosten sowie ein Sanierungsbedarf von rund 8 bis 10 Mio. Euro.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "WESER-KURIER: Hansewasser-Bad: Vereine rechnen mit Austrittswelle durch Schließung",
+      "url": "https://www.weser-kurier.de/bremen/politik/hansewasser-bad-bremen-schwimmvereine-warnen-vor-austrittswelle-doc85mph90pkdhf11ym6w5",
+      "datum": "2026-04-29"
+    },
+    "lat": 53.065255,
+    "lon": 8.83865,
+    "karte": "https://www.openstreetmap.org/?mlat=53.065255&mlon=8.838650#map=17/53.065255/8.838650"
   }
 ];
