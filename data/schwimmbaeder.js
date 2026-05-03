@@ -579,5 +579,23 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 51.120497,
     "lon": 8.615799,
     "karte": "https://www.openstreetmap.org/?mlat=51.120497&mlon=8.615799#map=17/51.120497/8.615799"
+  },
+  {
+    "id": 50,
+    "name": "Badeweiher Marl",
+    "adresse": "Paul-Baumann-Straße, 45772 Marl",
+    "bundesland": "Nordrhein-Westfalen",
+    "region": "Kreis Recklinghausen",
+    "status": "geschlossen",
+    "begruendung": "Evonik hat 2026 die Schließung des Marler Badeweihers bestätigt. Als Grund nennt der Betreiber die dauerhaft zu hohen Unterhaltskosten im sechsstelligen Bereich, die das Unternehmen nicht länger tragen will.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Radio Vest: Badeweiher in Marl schließt nach 74 Jahren",
+      "url": "https://www.radiovest.de/artikel/badeweiher-in-marl-schliesst-nach-74-jahren-2634373",
+      "datum": "2026-04-27"
+    },
+    "lat": 51.67697,
+    "lon": 7.096081,
+    "karte": "https://www.openstreetmap.org/?mlat=51.676970&mlon=7.096081#map=17/51.676970/7.096081"
   }
 ];
