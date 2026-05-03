@@ -81,17 +81,6 @@
       transition: background-color 160ms ease, box-shadow 160ms ease;
     }
 
-    .entry-row::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 0;
-      background: var(--paper-accent);
-      transition: width 160ms ease;
-    }
-
     .entry-row:hover {
       background: var(--paper-hover);
     }
@@ -99,10 +88,6 @@
     .entry-row.is-highlight {
       background: var(--paper-highlight);
       box-shadow: inset 0 0 0 1px rgba(24, 24, 24, 0.08);
-    }
-
-    .entry-row.is-highlight::before {
-      width: 6px;
     }
 
     #map {
@@ -736,12 +721,27 @@
       document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth' });
     }
 
+    function syncFilterInputs() {
+      document.getElementById('statusFilter').value = filter.status;
+      document.getElementById('bundeslandFilter').value = filter.bundesland;
+      document.getElementById('searchInput').value = filter.suche;
+    }
+
     function focusEintrag(id) {
+      filter = { status: '', bundesland: '', suche: '', jahr: '' };
+      syncFilterInputs();
+      mobilePanel = 'list';
       erweitertIds.add(id);
       highlightId = id;
       render();
       focusMapEntry(id);
       requestAnimationFrame(() => {
+        const target = document.querySelector(`[data-eintrag-id="${id}"], [data-mobile-eintrag-id="${id}"]`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          document.getElementById('listContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
         window.setTimeout(() => {
           highlightId = null;
           render();
@@ -1144,9 +1144,7 @@
 
     function resetFilters() {
       filter = { status: '', bundesland: '', suche: '', jahr: '' };
-      document.getElementById('statusFilter').value = '';
-      document.getElementById('bundeslandFilter').value = '';
-      document.getElementById('searchInput').value = '';
+      syncFilterInputs();
       render();
     }
 
