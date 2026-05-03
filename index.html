@@ -90,6 +90,15 @@
       box-shadow: inset 0 0 0 1px rgba(24, 24, 24, 0.08);
     }
 
+    .source-entry {
+      transition: background-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .source-entry.is-highlight {
+      background: var(--paper-highlight);
+      box-shadow: inset 0 0 0 1px rgba(24, 24, 24, 0.08);
+    }
+
     #map {
       height: 680px;
       background:
@@ -607,6 +616,7 @@
     let erweitertIds = new Set();
     let filter = { status: '', bundesland: '', suche: '', jahr: '' };
     let highlightId = null;
+    let sourceHighlightId = null;
     let mobilePanel = 'list';
 
     let mapInstance = null;
@@ -749,6 +759,21 @@
       });
     }
 
+    function focusQuelle(id) {
+      sourceHighlightId = id;
+      render();
+      requestAnimationFrame(() => {
+        const target = document.getElementById(`quelle-${id}`);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        window.setTimeout(() => {
+          sourceHighlightId = null;
+          render();
+        }, 3000);
+      });
+    }
+
     function renderTimeline() {
       const container = document.getElementById('timeline');
       const minJahr = 2020;
@@ -848,16 +873,9 @@
                 <h4 class="text-xs font-bold uppercase tracking-wider mb-1">Adresse</h4>
                 <a href="${eintrag.karte}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm border-b border-neutral-300 hover:border-black hover:text-black transition-colors"><span>${eintrag.adresse}</span><span aria-hidden="true">↗</span></a>
               </div>
-              <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider mb-1">Quelle</h4>
-                <a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs text-neutral-600 hover:text-black border-b border-neutral-300 hover:border-black transition-colors">
-                  <sup class="font-bold">${index + 1}</sup>
-                  <span>${formatQuelle(eintrag)}</span>
-                </a>
-              </div>
               <div class="sm:col-span-2">
                 <h4 class="text-xs font-bold uppercase tracking-wider mb-1">Begründung</h4>
-                <p class="text-sm leading-relaxed">${eintrag.begruendung}</p>
+                <p class="text-sm leading-relaxed">${eintrag.begruendung}<a href="#quelle-${eintrag.id}" onclick="focusQuelle(${eintrag.id}); return false;" class="align-super text-[0.72rem] font-bold leading-none no-underline hover:underline ml-1">${index + 1}</a></p>
               </div>
             </div>
           ` : ''}
@@ -945,7 +963,7 @@
 
     function renderQuellenverzeichnis(daten) {
       document.getElementById('quellenverzeichnis').innerHTML = daten.map((eintrag, index) => `
-        <p class="mb-2">
+        <p id="quelle-${eintrag.id}" class="source-entry mb-2 scroll-mt-24 ${sourceHighlightId === eintrag.id ? 'is-highlight' : ''}">
           <sup class="font-bold">${index + 1}</sup>
           <a href="${eintrag.quelle.url}" target="_blank" rel="noopener noreferrer" class="hover:underline">${formatQuelle(eintrag)}</a>
         </p>
