@@ -615,5 +615,23 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 53.065255,
     "lon": 8.83865,
     "karte": "https://www.openstreetmap.org/?mlat=53.065255&mlon=8.838650#map=17/53.065255/8.838650"
+  },
+  {
+    "id": 52,
+    "name": "Freibad Breklum",
+    "adresse": "Kirchenstraße 20, 25821 Breklum",
+    "bundesland": "Schleswig-Holstein",
+    "region": "Nordfriesland",
+    "status": "gefaehrdet",
+    "begruendung": "In Breklum werden 2026 parallel Haushaltskonsolidierung und Förderanträge für zwei Teilbereiche des Freibads beraten. Zugleich bleibt der Sanierungsbedarf hoch; ein früheres Konzept bezifferte die Gesamtkosten auf rund 1,4 Mio. Euro. Solange Finanzierung und Umsetzung offen sind, bleibt das Bad im Monitor als gefährdet.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "Gemeinde Breklum: Gemeindevertretung Breklum lädt zur Sitzung im Sportpark ein",
+      "url": "https://breklum.de/gemeinde/gemeindevertretung-breklum-laedt-zur-sitzung-im-sportpark-ein",
+      "datum": "2026-04-14"
+    },
+    "lat": 54.606787,
+    "lon": 8.985036,
+    "karte": "https://www.openstreetmap.org/?mlat=54.606787&mlon=8.985036#map=17/54.606787/8.985036"
   }
 ];
