@@ -633,5 +633,59 @@ window.SCHWIMMBAEDER_DATEN = [
     "lat": 54.606787,
     "lon": 8.985036,
     "karte": "https://www.openstreetmap.org/?mlat=54.606787&mlon=8.985036#map=17/54.606787/8.985036"
+  },
+  {
+    "id": 53,
+    "name": "Freibad Lautenbach",
+    "adresse": "Eichenstraße 27, 76593 Gernsbach",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Rastatt",
+    "status": "gefaehrdet",
+    "begruendung": "Der Gemeinderat Gernsbach hat am 06.05.2026 das Zukunftspaket 2030 beschlossen. Danach soll das Freibad Lautenbach ab 2027 nicht mehr als städtische Einrichtung betrieben, sondern nur noch zur Übernahme durch einen Verein angeboten werden. Da ein regelmäßiger Betriebskostenzuschuss ausgeschlossen ist, bleibt die Zukunft des Bads offen.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "SWR Aktuell: Gernsbach beschließt umstrittenes Sparpaket: Schwimmbäder, Kino und Schule auf Streichliste",
+      "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/karlsruhe/buerger-frustriert-wegen-sparpaket-gernsbach-freibaeder-schliessen-100.html",
+      "datum": "2026-05-06"
+    },
+    "lat": 48.757803,
+    "lon": 8.371706,
+    "karte": "https://www.openstreetmap.org/?mlat=48.757803&mlon=8.371706#map=17/48.757803/8.371706"
+  },
+  {
+    "id": 54,
+    "name": "Freibad Reichental",
+    "adresse": "Badstraße 20, 76593 Gernsbach",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Rastatt",
+    "status": "gefaehrdet",
+    "begruendung": "Der Gemeinderat Gernsbach hat am 06.05.2026 das Zukunftspaket 2030 beschlossen. Danach soll das Freibad Reichental ab 2027 nicht mehr als städtische Einrichtung betrieben, sondern nur noch zur Übernahme durch einen Verein angeboten werden. Da ein regelmäßiger Betriebskostenzuschuss ausgeschlossen ist, bleibt die Zukunft des Bads offen.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "SWR Aktuell: Gernsbach beschließt umstrittenes Sparpaket: Schwimmbäder, Kino und Schule auf Streichliste",
+      "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/karlsruhe/buerger-frustriert-wegen-sparpaket-gernsbach-freibaeder-schliessen-100.html",
+      "datum": "2026-05-06"
+    },
+    "lat": 48.733525,
+    "lon": 8.401158,
+    "karte": "https://www.openstreetmap.org/?mlat=48.733525&mlon=8.401158#map=17/48.733525/8.401158"
+  },
+  {
+    "id": 55,
+    "name": "Freibad Obertsrot",
+    "adresse": "Am Schwimmbad 3, 76593 Gernsbach",
+    "bundesland": "Baden-Württemberg",
+    "region": "Landkreis Rastatt",
+    "status": "gefaehrdet",
+    "begruendung": "Der Gemeinderat Gernsbach hat am 06.05.2026 das Zukunftspaket 2030 beschlossen. Danach soll das Freibad Obertsrot ab 2027 nicht mehr als städtische Einrichtung betrieben, sondern nur noch zur Übernahme durch einen Verein angeboten werden. Da ein regelmäßiger Betriebskostenzuschuss ausgeschlossen ist, bleibt die Zukunft des Bads offen.",
+    "zeitraum": "2026",
+    "quelle": {
+      "titel": "SWR Aktuell: Gernsbach beschließt umstrittenes Sparpaket: Schwimmbäder, Kino und Schule auf Streichliste",
+      "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/karlsruhe/buerger-frustriert-wegen-sparpaket-gernsbach-freibaeder-schliessen-100.html",
+      "datum": "2026-05-06"
+    },
+    "lat": 48.740551,
+    "lon": 8.341229,
+    "karte": "https://www.openstreetmap.org/?mlat=48.740551&mlon=8.341229#map=17/48.740551/8.341229"
   }
 ];
