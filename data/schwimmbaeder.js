@@ -605,7 +605,7 @@ window.SCHWIMMBAEDER_DATEN = [
     "bundesland": "Bremen",
     "region": "Bremen Östliche Vorstadt",
     "status": "geschlossen",
-    "begruendung": "Laut Weser-Kurier soll das Bad zum 01.07.2026 schließen. Hintergrund ist nicht nur der Verlust von Vereinswasserflächen, sondern auch die vom Senat beschriebene strukturelle Unterdeckung, hohe Instandhaltungs- und Energiekosten sowie ein Sanierungsbedarf von rund 8 bis 10 Mio. Euro.",
+    "begruendung": "Laut Weser-Kurier wird das Bad zum 01.07.2026 geschlossen. Hintergrund ist nicht nur der Verlust von Vereinswasserflächen, sondern auch die vom Senat beschriebene strukturelle Unterdeckung, hohe Instandhaltungs- und Energiekosten sowie ein Sanierungsbedarf von rund 8 bis 10 Mio. Euro.",
     "zeitraum": "2026",
     "quelle": {
       "titel": "WESER-KURIER: Hansewasser-Bad: Vereine rechnen mit Austrittswelle durch Schließung",

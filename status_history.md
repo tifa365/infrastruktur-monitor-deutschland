@@ -71,6 +71,12 @@ Verlaufstracker für Umklassifizierungen und wichtige Statusereignisse, ohne die
 | 2025-05-15 | `gefaehrdet` | Erstmeldung: Bremen will Wasserflächen einsparen; dadurch könnte das Blumenthaler Freibad zur Disposition gestellt werden. | https://www.weser-kurier.de/bremen/stadtteil-blumenthal/blumenthal-warum-das-freibad-zur-disposition-stehen-koennte-doc80n9msk8fbbp66q146g |
 | 2026-04-11 | `gefaehrdet` | Update: Statt eines unmittelbaren Aus wird nun über Investitionen in das Freibad auch mithilfe von Bürgern gesprochen. Das entschärft die Lage, reicht wegen offener Bedingungen und Finanzierung aber noch nicht für eine Entwarnung. | https://www.weser-kurier.de/bremen/stadtteil-blumenthal/freibad-blumenthal-warum-vorgaben-fuers-spendenprojekt-schlecht-waeren-doc85c9tf0d65s1gi9a946w |
 
+### hanseWasser Hallenbad
+
+| Datum | Live-Status | Ereignis | Quelle |
+|-------|-------------|----------|--------|
+| 2026-04-29 | `geschlossen` | Der WESER-KURIER berichtet, dass das Bad zum 01.07.2026 geschlossen wird. Hintergrund sind die geplante Aufgabe der Wasserflächen, eine strukturelle Unterdeckung sowie hoher Sanierungs- und Betriebskostenbedarf. | https://www.weser-kurier.de/bremen/politik/hansewasser-bad-bremen-schwimmvereine-warnen-vor-austrittswelle-doc85mph90pkdhf11ym6w5 |
+
 ### Freibad Erleborn
 
 | Datum | Live-Status | Ereignis | Quelle |
